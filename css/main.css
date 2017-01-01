@@ -8,6 +8,12 @@ html, body {
 	height:100%;
 }
 
+@media screen and (max-width:480px) {
+	h2 {
+		font-size:18px;
+	}
+}
+
 .typed-cursor{
     opacity: 1;
     color:#FF8C00;
@@ -57,7 +63,6 @@ body {
 h2 {
 	font-family: 'Roboto Slab', serif;
 	color:rgba(250,250,250,1);
-	/* background:rgba(97,99,87,0.15); */
 	padding:10px 10px;
 	margin-bottom: 2px;
 }

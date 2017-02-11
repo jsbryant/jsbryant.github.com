@@ -54,6 +54,11 @@ h1 {
 	clear:left;
 }
 
+#header-wrap > h1 > .name {
+	color:#222228;
+	text-decoration: none;
+}
+
 p {
 	position: relative;
 	margin-top: 20px;

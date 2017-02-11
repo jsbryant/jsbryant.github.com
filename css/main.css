@@ -49,6 +49,11 @@ h1 {
 	color:#222228;
 }
 
+#header-wrap > h1 > .name {
+	color:#222228;
+	text-decoration: none;
+}
+
 #desc-lft > h1 {
 	float: left;
 	clear:left;

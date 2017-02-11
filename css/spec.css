@@ -38,12 +38,15 @@ header {
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
 }
 
+h1 {
+	font-family:'Roboto Slab', serif;
+}
+
 #header-wrap > h1 {
 	position: relative;
 	top:23px;
 	float: left;
 	color:#222228;
-	font-family:'Roboto Slab', serif;
 }
 
 #desc-lft > h1 {

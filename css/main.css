@@ -158,6 +158,10 @@ nav {
 	width:325px;
 }
 
+#desc-lft > .about {
+	width:500px;
+}
+
 #desc-rt {
 	padding-top:20px;
 	float:right;
@@ -239,6 +243,9 @@ footer {
     	margin:auto;
     	width:280px;
     }
+    #desc-lft > .about {
+	width:280px;
+    }	
     #desc-rt {
     	float:none;
     	margin:auto;

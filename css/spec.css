@@ -171,10 +171,10 @@ footer {
     	text-align: center;
     }
     #header-wrap {
-    	width:95%;
+    	width:100%;
     }
     #content-wrap {
-    	width:95%;
+    	width:100%;
     }
     .sec {
     	padding-left: 0;
@@ -195,6 +195,6 @@ footer {
     #desc-lft {
     	float:none;
     	margin:auto;
-    	width:280px;
+    	width:300px;
     }
 }

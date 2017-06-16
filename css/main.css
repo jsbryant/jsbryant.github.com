@@ -109,8 +109,8 @@ nav {
 	height:2px;
 	background: #1E90FF;
 	content:'';
-	-webkit-transition:all 0.1s linear;
-	transition:all 0.1s linear;
+	-webkit-transition:all 0.2s linear;
+	transition:all 0.2s linear;
 }
 
 .nav-link > a:hover::after {

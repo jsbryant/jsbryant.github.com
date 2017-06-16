@@ -156,8 +156,10 @@ nav {
 .sec {
 	position: relative;
 	display: block;
+	/*
 	margin-bottom:80px;
 	padding-bottom: 20px;
+	*/
 	width: 100%;
 	min-height:100px;
 	overflow:hidden;

@@ -57,6 +57,7 @@ h1 {
 #header-wrap > h1 > .name {
 	color:#222228;
 	text-decoration: none;
+	font-size:2.5em;
 }
 
 #desc-lft > h1 {

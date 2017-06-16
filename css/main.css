@@ -153,6 +153,11 @@ nav {
 
 /* End Text Link */
 
+.contact > a{
+	color:#1E90FF;
+	text-decoration: none;
+}
+
 .sec {
 	position: relative;
 	display: block;

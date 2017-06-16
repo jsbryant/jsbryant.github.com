@@ -96,26 +96,25 @@ nav {
 }
 
 .nav-link > a {
+	position:relative;
 	text-decoration: none;
 	color:#1E90FF;
 }
 
 .nav-link > a::after {
 	position: absolute;
-	top:130%;
+	bottom:0;
 	left:0;
-	width:100%;
+	width:0;
 	height:2px;
 	background: #1E90FF;
 	content:'';
-	opacity:0;
 	-webkit-transition:all 0.1s linear;
 	transition:all 0.1s linear;
 }
 
 .nav-link > a:hover::after {
-	top:100%;
-	opacity:1;
+	width:100%;
 }
 
 /* End Nav Link */

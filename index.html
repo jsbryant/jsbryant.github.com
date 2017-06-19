@@ -128,17 +128,6 @@
 		  window.scrollTo(0, 0);
 		}
 	</script>
-	
-	<!-- No link hover on mobile -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('a').on('click touchend', function(e) {
-				var el = $(this);
-				var link = el.attr('href');
-				window.location = link;
-			});
-		});
-	</script>
 
 	<!-- Sticky Header -->
 	<script type="text/javascript">

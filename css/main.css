@@ -219,6 +219,7 @@ input[type=submit]:hover {
 textarea, input[type="text"], input[type="submit"], input[type="email"] {
 	-webkit-appearance:none;
 	font-family: 'Roboto', sans-serif;
+	font-size: inherit;
 }
 
 /* End Contact Input */

@@ -190,36 +190,6 @@ hr {
 	background-color:#F5F5F5;
 }
 
-/* Begin Contact Link */
-
-/*
-
-a.contact-link {
-	position:relative;
-	text-decoration: none;
-	color:#F44336;
-}
-
-a.contact-link::after {
-	position:absolute;
-	top:100%;
-	left:0;
-	width:0%;
-	height:2px;
-	background:#F44336;
-	content:'';
-	-webkit-transition:all 0.2s ease-in-out;
-	transition:all 0.2s ease-in-out;
-}
-
-a.contact-link:hover::after {
-	width:100%;
-}
-
-*/
-
-/* End Contact Link */
-
 /* Begin Contact Input */
 
 input[type=text], select, textarea {
@@ -244,6 +214,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #F95347;
+}
+
+textarea, input[type="text"], input[type="submit"], input[type="email"] {
+	-webkit-appearance:none;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* End Contact Input */
@@ -276,11 +251,6 @@ input[type=submit]:hover {
 	line-height:36px;
 	font-family:'Titillium Web', sans-serif;
 	font-weight:700;
-}
-
-textarea, input[type="text"], input[type="submit"], input[type="email"] {
-	-webkit-appearance:none;
-	font-family: inherit; font-size: inherit;
 }
 
 #desc-lft > h1 {

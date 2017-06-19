@@ -295,6 +295,9 @@ input[type=submit]:hover {
 	font-weight:700;
 }
 
+textarea, input[type="text"], input[type="submit"], input[type="email"] {
+	-webkit-appearance:none;
+
 #desc-lft > h1 {
 	float: left;
 	clear:left;

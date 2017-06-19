@@ -108,25 +108,8 @@ nav {
 }
 
 .nav-link > a {
-	position:relative;
 	text-decoration: none;
 	color:#F44336;
-}
-
-.nav-link > a::before {
-	position: absolute;
-	bottom:0;
-	left:0;
-	width:0;
-	height:2px;
-	background: #F44336;
-	content:'';
-	-webkit-transition:all 0.2s ease-in-out;
-	transition:all 0.2s ease-in-out;
-}
-
-.nav-link > a:hover::before {
-	width:100%;
 }
 
 /* End Nav Link */

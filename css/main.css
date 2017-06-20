@@ -208,8 +208,7 @@ input[type=text], input[type=email], select, textarea {
     box-sizing: border-box;
     margin-top: 4px;
     margin-bottom: 4px;
-    resize: vertical;
-    color: #8B8B8B;	
+    resize: vertical;	
 }
 
 input[type=submit] {
@@ -229,6 +228,10 @@ textarea, input[type="text"], input[type="submit"], input[type="email"] {
     -webkit-appearance:none;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+textarea, input[type="text"], input[type="email"] {
+    color: #8B8B8B;
 }
 
 /* End Contact Input */

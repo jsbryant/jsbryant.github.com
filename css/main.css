@@ -111,11 +111,11 @@ nav {
 
 .nav-link > a {
 	text-decoration: none;
-	color:#5648f9;
+	color:##6659f9;
 }
 
 .nav-link > a:hover {
-	color:#6659f9;
+	color:#796dfb;
 }
 
 /* End Nav Link */
@@ -209,10 +209,11 @@ input[type=text], input[type=email], select, textarea {
     margin-top: 4px;
     margin-bottom: 4px;
     resize: vertical;
+    color: #8B8B8B;	
 }
 
 input[type=submit] {
-    background-color: #5648f9;
+    background-color: ##6659f9;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -221,14 +222,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #6659f9;
+    background-color: #796dfb;
 }
 
 textarea, input[type="text"], input[type="submit"], input[type="email"] {
-	-webkit-appearance:none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #8B8B8B;
+    -webkit-appearance:none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 /* End Contact Input */

@@ -212,7 +212,7 @@ input[type=text], input[type=email], select, textarea {
 }
 
 input[type=submit] {
-    background-color: ##6659f9;
+    background-color: #6659f9;
     color: white;
     padding: 12px 24px;
     border: none;

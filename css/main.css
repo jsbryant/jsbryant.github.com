@@ -230,10 +230,6 @@ textarea, input[type="text"], input[type="submit"], input[type="email"] {
     font-size: 16px;
 }
 
-textarea, input[type="text"], input[type="email"] {
-    color: #8B8B8B;
-}
-
 /* End Contact Input */
 
 #desc-lft {

@@ -7,7 +7,7 @@
 }
 
 *:focus {
-    outline: none;
+    	outline: none;
 }
 
 html {
@@ -26,12 +26,12 @@ html, body {
 
 /*
 .hero-image {
-    background-image:url(../images/pizzatar_lrg.gif);
-    height:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+	background-image:url(../images/pizzatar_lrg.gif);
+	height:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 */
 
@@ -177,8 +177,7 @@ hr {
 
 #about {
 	height:auto;
-	padding-top:120px;
-	margin-top:-60px;
+	padding-top:60px;
 }
 
 .about-me {
@@ -201,33 +200,33 @@ hr {
 /* Begin Contact Input */
 
 input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    resize: vertical;	
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	resize: vertical;	
 }
 
 input[type=submit] {
-    background-color: #6659f9;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+	background-color: #6659f9;
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #796dfb;
+	background-color: #796dfb;
 }
 
 textarea, input[type="text"], input[type="submit"], input[type="email"] {
-    -webkit-appearance:none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+	-webkit-appearance:none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
 /* End Contact Input */
@@ -304,56 +303,56 @@ footer {
 }
 
 @media screen and (max-width: 1050px) {
-    img.resize {
-    	max-width:50%;
-   		max-height:50%;
-    }
+	img.resize {
+	max-width:50%;
+		max-height:50%;
+	}
 }
 
 @media screen and (max-width: 830px) {
-    #header-wrap > h1 {
-    	float:none;
-    	text-align: center;
-    }
-    #header-wrap {
-    	width:100%;
-    }
-    .content-wrap {
-    	width:100%;
-    }
-    .sec {
-    	padding-left: 0;
-    }
-    nav {
-    	float:none;
-    	text-align: center;
-    	top:20px;
-    }
-    .img-rt {
-    	display: block;
-    	float:none;
-    	margin:auto;
-    	clear:left;
-    }
-    .img-lft {
-    	display: block;
-    	float:none;
-    	margin:auto; 
-    }
-    #header {
-    	height:120px;
-    }
-    #desc-lft {
-    	float:none;
-    	margin:auto;
-    	width:300px;
-    }
-    #desc-lft > .about {
+	#header-wrap > h1 {
+	float:none;
+	text-align: center;
+	}
+	#header-wrap {
+	width:100%;
+	}
+	.content-wrap {
+	width:100%;
+	}
+	.sec {
+	padding-left: 0;
+	}
+	nav {
+	float:none;
+	text-align: center;
+	top:20px;
+	}
+	.img-rt {
+	display: block;
+	float:none;
+	margin:auto;
+	clear:left;
+	}
+	.img-lft {
+	display: block;
+	float:none;
+	margin:auto; 
+	}
+	#header {
+	height:120px;
+	}
+	#desc-lft {
+	float:none;
+	margin:auto;
+	width:300px;
+	}
+	#desc-lft > .about {
 		width:300px;
 	}
-    #desc-rt {
-    	float:none;
-    	margin:auto;
-    	width:300px;
-    }
+	#desc-rt {
+	float:none;
+	margin:auto;
+	width:300px;
+	}
 }

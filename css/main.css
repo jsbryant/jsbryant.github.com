@@ -111,11 +111,11 @@ nav {
 
 .nav-link > a {
 	text-decoration: none;
-	color:#6659f9;
+	color:#FD6566;
 }
 
 .nav-link > a:hover {
-	color:#796dfb;
+	color:#FB7273;
 }
 
 /* End Nav Link */
@@ -212,7 +212,7 @@ input[type=text], input[type=email], select, textarea {
 }
 
 input[type=submit] {
-	background-color: #6659f9;
+	background-color: #FD6566;
 	color: white;
 	padding: 12px 24px;
 	border: none;
@@ -221,7 +221,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	background-color: #796dfb;
+	background-color: #FB7273;
 }
 
 textarea, input[type="text"], input[type="submit"], input[type="email"] {

@@ -193,23 +193,28 @@ hr {
 	color:#778899;
 } */
 
+.ordered-animation {
+	text-align: center;
+}
+
 .first, .second, .third, .forth, .fifth, .sixth {
 	position: absolute;
 	left: 20px;
 	font-family: 'Roboto', sans-serif;
 	color: lightslategray;
 	text-align: center;
+	line-height: 1.5em;
 	opacity: 0;
 }
 
 .first {
 	top: 50px;
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 .second, .third, .forth, .fifth, .sixth {
 	top: -20px;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #work {

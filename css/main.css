@@ -181,9 +181,16 @@ hr {
 	margin-top:-60px;
 }
 
-.about-me {
-	position:relative;
+.about-me .first {
+	position: relative;
 	height:50%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	clear:both;
+	line-height:1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color:#778899;
 }
 
 #work {

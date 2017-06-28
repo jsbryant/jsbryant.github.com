@@ -204,17 +204,12 @@ hr {
 
 .first {
 	top: 70px;
-	font-size: 64px;
+	font-size: 2em;
 }
 
-.second, .third, .forth, .fifth {
+.second, .third, .forth, .fifth, .sixth {
 	top: 20px;
-	font-size: 32px;
-}
-	
-.sixth {
-	top: 20px;
-	font-size: 64px;
+	font-size: 1.5em;
 }
 
 #work {

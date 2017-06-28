@@ -194,10 +194,25 @@ hr {
 } */
 
 .first {
-    font-family: "Roboto",sans-serif;
-    font-size: 64px;
-    color: lightslategray;
-    text-align: center;
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	font-family: "Roboto",sans-serif;
+	font-size: 64px;
+	color: lightslategray;
+	text-align: center;
+	opacity: 0;
+}
+
+.second, .third, .forth, .fifth, .sixth {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-family: "Roboto",sans-serif;
+	font-size: 64px;
+	color: lightslategray;
+	text-align: center;
+	opacity: 0;
 }
 
 #work {

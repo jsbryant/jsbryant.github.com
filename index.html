@@ -34,8 +34,13 @@
 	<!-- ABOUT -->
 	<section id="about" class="sec">
 		<div class="content-wrap">
-			<div id="desc-ctr">
-				<p class="about-me first">Hi!</p>
+			<div id="desc-ctr" class="ordered-animation">
+				<p class="first" ani-start="0" ani-duration="1000">Hi!</p>
+			  	<p class="second" ani-start="2000" ani-duration="1000">I'm Jordan.</p>
+			  	<p class="third" ani-start="4000" ani-duration="3000">I'm a multidisciplinary designer based in Los Angeles, CA.</p>
+			  	<p class="forth" ani-start="8000" ani-duration="4000">I design experiences across a variety of platforms including iOS &amp; Android mobile devices, web and television.</p>
+			  	<p class="fifth" ani-start="13000" ani-duration="4000">My client list includes A24, AT&amp;T, Cablevision, DIRECTV, Lionsgate, Mitsubishi, Sony, Universal and Warner Bros.</p>
+			  	<p class="sixth" ani-start="18000" ani-duration="0">Thanks for taking a look!</p>
 			</div>
 		</div>
 	</section>
@@ -166,6 +171,19 @@
 		      }
 		    }
 		  });
+	</script>
+	
+	<!-- Shane Swayney .about-me text animation -->
+	<script>
+		$(function(){
+			for (i = 0, headers = $(".ordered-animation").children(); i < headers.length; i++) {
+			  var head = $(headers[i])
+			  var start = head.attr('ani-start') || 0;
+			  var duration = head.attr('ani-duration') || -1;
+			  head.delay(start).animate({top: 20,opacity: 1});
+			  if(duration > 0){head.delay(duration).animate({opacity: 0});};
+			}
+		});	
 	</script>
 </body>
 </html>

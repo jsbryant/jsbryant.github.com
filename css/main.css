@@ -203,12 +203,12 @@ hr {
 }
 
 .first {
-	top: 70px;
+	top: 50px;
 	font-size: 2em;
 }
 
 .second, .third, .forth, .fifth, .sixth {
-	top: 20px;
+	top: -20px;
 	font-size: 1.5em;
 }
 

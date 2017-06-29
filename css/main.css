@@ -193,10 +193,6 @@ hr {
 	color:#778899;
 } */
 
-.ordered-animation {
-	text-align: center;
-}
-
 .first, .second, .third, .forth, .fifth, .sixth {
 	position: absolute;
 	left: 20px;
@@ -214,7 +210,7 @@ hr {
 
 .second, .third, .forth, .fifth, .sixth {
 	top: -20px;
-	font-size: 1em;
+	font-size: 1.6em;
 }
 
 #work {
@@ -277,10 +273,9 @@ textarea, input[type="text"], input[type="submit"], input[type="email"] {
 
 #desc-ctr {
 	margin:0 auto;
-	width:80%;
-	max-width:800px;
-	font-size:20px;
-	line-height:36px;
+	width:90%;
+	max-width:600px;
+	text-align: center;
 }
 
 #desc-contact {

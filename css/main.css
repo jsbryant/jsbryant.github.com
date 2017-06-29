@@ -193,7 +193,7 @@ hr {
 	color:#778899;
 } */
 
-.first, .second, .third, .forth, .fifth, .sixth {
+/* .first, .second, .third, .forth, .fifth, .sixth {
 	position: absolute;
 	left: 20px;
 	font-family: 'Roboto', sans-serif;
@@ -211,7 +211,7 @@ hr {
 .second, .third, .forth, .fifth, .sixth {
 	top: -20px;
 	font-size: 1.6em;
-}
+} */
 
 #work {
 	height:auto;

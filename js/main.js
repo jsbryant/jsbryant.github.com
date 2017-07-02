@@ -3,9 +3,6 @@
 		window.scrollTo(0, 0);
 	}
 
-// Sticky Header
-	$('#header').stickThis();
-
 // Big ups Chris Coyier https://css-tricks.com/snippets/jquery/smooth-scrolling/
 	$('a[href*="#"]')
 	  .not('[href="#"]')

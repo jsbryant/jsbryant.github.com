@@ -4,9 +4,7 @@
 	}
 	
 // Sticky header
-	$(function() {
-		$('#header').stickThis();
-	});
+	$('#header').stickThis();
 
 // Big ups Chris Coyier https://css-tricks.com/snippets/jquery/smooth-scrolling/
 	$('a[href*="#"]')

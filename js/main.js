@@ -1,7 +1,3 @@
-// Sticky header
-	$('#header').stickThis();
-
-
 // Reload to top of page 
 	window.onbeforeunload = function () {
 		window.scrollTo(0, 0);
@@ -36,3 +32,8 @@
 	      }
 	    }
 	  });
+
+// Sticky header
+	$('#header').stickThis();
+
+

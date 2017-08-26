@@ -4,15 +4,52 @@
 <title>Jordan Bryant</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/main.css">	
-<link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/main.css"> 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Big ups sticky-anything author: Mark Senff http://www.senff.com -->
+<script src="js/jq-sticky-anything.min.js"></script>
 </head>
 <body>
 
+	<!-- Hero Image -->
+	<div class="hero-image">
+
+		<!-- ABOUT -->
+		<section id="about" class="sec">
+			<div class="content-wrap">
+				<div id="desc-ctr">
+
+					<!-- Blob animation shamelessly stolen from Luuk Lamers @xaddict https://codepen.io/xaddict/pen/epddwr -->
+					<div id="blob-container">
+					<h1>Hi!</h1>
+					<svg id="organic-blob" width="300" height="300" xmlns="http://www.w3.org/2000/svg" filter="url(#goo)">
+					  <defs>
+					    <filter id="goo">
+					      <!-- tympanus.net/codrops/creative-gooey-effects -->
+					      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+					      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+					      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+					    </filter>
+					  </defs>
+					  <circle id="Circle1"></circle>
+					  <circle id="Circle2"></circle>
+					  <circle id="Circle3"></circle>
+					  <circle id="Circle4"></circle>
+					</svg>
+					</div>
+
+					<p class="about-me">I'm Jordan. I design experiences across platforms including iOS &amp; Android mobile, web, television and print. My client list includes A24, AT&amp;T, Cablevision, DIRECTV, Lionsgate, Microsoft, Mitsubishi, Sony, Southern California Edison, Universal and Warner Bros. Thanks for taking a look!</p>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
 	<!-- Header -->
-	<div id="header">
+	<!-- <div id="header">
 		<div id="header-wrap">
 			<h1><a class="name" href="index.html">JRDN</a></h1>
 			<nav>
@@ -21,16 +58,10 @@
 				<span class="nav-link"><a href="#contact">Contact</a></span>
 			</nav>
 		</div>
-	</div>
+	</div> -->
 
-	<!-- ABOUT -->
-	<section id="about" class="sec">
-		<div class="content-wrap">
-			<div id="desc-ctr">
-				<p>Hi! I'm Jordan. I'm a multidisciplinary designer based in Los Angeles, CA. I design experiences across a variety of platforms including iOS &amp; Android mobile devices, web, television and print. My client list includes A24, AT&amp;T, Cablevision, DIRECTV, Lionsgate, Microsoft, Mitsubishi, Sony, Southern California Edison, Universal and Warner Bros. Thanks for taking a look!</p>
-			</div>
-		</div>
-	</section>
+
+<!-- 	<hr> -->
 
 	<!-- WORK -->
 	<!-- Cablevision Optimum App -->
@@ -92,18 +123,18 @@
 	<section id="contact" class="sec">
 		<div class="content-wrap">
 			<div id="desc-contact">
-			    <form action="https://formspree.io/jsbrymail@gmail.com" method="POST">
+			    <form action="mail.php" method="POST">
 
 				    <label for="name">Name</label>
 				    <input type="text" id="name" name="name" placeholder="Your name">
 
 				    <label for="email">Email</label>
-				    <input type="email" id="email" name="_replyto" placeholder="Your email">
+				    <input type="text" id="email" name="email" placeholder="Your email">
 
 				    <label for="message">Message</label>
 				    <textarea id="message" name="message" placeholder="Let’s work together!" style="height:200px"></textarea>
 
-				    <input type="submit" value="Send" style="-webkit-appearance:none;">
+				    <input type="submit" value="Submit">
 
 			  </form>
 			</div>

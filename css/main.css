@@ -228,6 +228,8 @@ hr {
 	font-size: 80px;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	color: #FFF;
 	z-index: 1;
@@ -465,4 +467,24 @@ footer {
     	margin:auto;
     	width:300px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+	#Cirlce1, #Circle2, #Circle3, #Circle4 {
+		-webkit-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-o-transition-property: none !important;
+		transition-property: none !important;
+		-webkit-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-o-transform: none !important;
+		transform: none !important;
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-ms-animation: none !important;
+		-o-animation: none !important;
+		animation: none !important;
+	}	
 }

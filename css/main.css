@@ -329,7 +329,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #F44336;
+    background-color: #FD6566;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -337,9 +337,9 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+/* input[type=submit]:hover {
     background-color: #F95347;
-}
+} */
 
 /* End Contact Input */
 

@@ -470,7 +470,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-	#Cirlce1, #Circle2, #Circle3, #Circle4 {
+	svg, svg circle {
 		-webkit-transition-property: none !important;
 		-moz-transition-property: none !important;
 		-ms-transition-property: none !important;

@@ -241,6 +241,16 @@ svg circle {
 	fill: #FD6566;
 }
 
+@-webkit-keyframes from0to360 {
+	from{transform:rotate(0);}
+	to{transform:rotate(360deg);}
+}
+
+@-moz-keyframes from0to360 {
+	from{transform:rotate(0);}
+	to{transform:rotate(360deg);}
+}
+
 @keyframes from0to360 {
 	from{transform:rotate(0);}
 	to{transform:rotate(360deg);}
@@ -252,6 +262,16 @@ svg circle {
 	cy: 145;
 	r: 100;
 	transform-origin: 145px 150px;
+}
+
+@-webkit-keyframes from360to0 {
+	from{transform:rotate(360deg);}
+	to{transform:rotate(0deg);}
+}
+
+@-moz-keyframes from360to0 {
+	from{transform:rotate(360deg);}
+	to{transform:rotate(0deg);}
 }
 
 @keyframes from360to0 {

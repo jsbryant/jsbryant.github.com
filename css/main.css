@@ -355,6 +355,7 @@ input[type=submit] {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 /* input[type=submit]:hover {

@@ -27,9 +27,7 @@ html, body {
 	left: 0;
 	width: 100%;
 	height: 6px;
-	background: #ee0979;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #FD6566;
 }
 
 .hero-image {
@@ -236,10 +234,7 @@ hr {
 
 svg,
 svg circle {
-/* 	fill: #FD6566; */
-	background: #ee0979;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 	fill: #FD6566;
 }
 
 @-webkit-keyframes from0to360 {

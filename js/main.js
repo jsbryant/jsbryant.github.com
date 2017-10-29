@@ -5,8 +5,8 @@
 
 // Big ups Chris Coyier https://css-tricks.com/snippets/jquery/smooth-scrolling/
 	$('a[href*="#"]')
-	  .not('[href="#"]')
-	  .not('[href="#0"]')
+// 	  .not('[href="#"]')
+// 	  .not('[href="#0"]')
 	  .click(function(event) {
 	    if (
 	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 

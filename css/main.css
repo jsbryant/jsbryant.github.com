@@ -381,6 +381,9 @@ img.indiv-img {
 }
 
 #contact-btn:hover {
+    -webkit-transform: translate3d(0,-3px,0);
+    -moz-transform: translate3d(0,-3px,0);
+    -ms-transform: translate3d(0,-3px,0);
     transform: translate3d(0,-3px,0);
     box-shadow: 0px 10px 20px rgba(0,0,0,0.08);
 }
@@ -389,6 +392,9 @@ img.indiv-img {
     position: absolute;
     bottom: -30px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 50px;
     height: 50px;

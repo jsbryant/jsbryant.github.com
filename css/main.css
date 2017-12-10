@@ -1,4 +1,3 @@
-/* BASICS */
 *,
 *:before,
 *:after {
@@ -161,6 +160,7 @@ img.indiv-img {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
     transform-origin: left top;
+    z-index: 2;
 }
 
 .avatar {
@@ -211,6 +211,7 @@ img.indiv-img {
     -webkit-animation-delay: 7s;
     animation-delay: 7s;
     transform-origin: right top;
+    z-index: 2;
 }
 
 #bubble-container-br img {
@@ -256,6 +257,7 @@ img.indiv-img {
     -webkit-animation-delay: 13s;
     animation-delay: 13s;
     transform-origin: left top;
+    z-index: 2;
 }
 
 #bubble-container-bl img {
@@ -390,7 +392,7 @@ img.indiv-img {
 
 #scroll-hint {
     position: absolute;
-    bottom: -30px;
+    bottom: -25px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -398,12 +400,34 @@ img.indiv-img {
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
+    background: #fe7b63;
     border-radius: 50%;
-    background-color: #fe7b63;
-    text-align: center;
-    line-height: 53px;
-    color: #fff;
     z-index: 1;
+}
+
+#arrow-down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: arrowDown 1.2s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes arrowDown {
+    0% {top: 30%; opacity: 0;}
+    50% {top: 50%; opacity: 1;}
+    100% {top: 70%; opacity: 0;}
+}
+/* Standard syntax */
+@keyframes arrowDown {
+    0% {top: 30%; opacity: 0;}
+    50% {top: 50%; opacity: 1;}
+    100% {top: 70%; opacity: 0;}
 }
 /* END HERO */
 

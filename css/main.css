@@ -489,13 +489,13 @@ img.indiv-img {
     max-width: 800px;
 }
 
-.work a {
+.work .project-link {
     text-decoration: none;
     color: #ff5e62;
     font-size: 24px;
 }
 
-.work a::after {
+.work .project-link::after {
     padding-left: 8px;
     display: inline;
     content: '\2192';
@@ -510,7 +510,7 @@ img.indiv-img {
     padding-left: 14px;
 } */
 
-.work:hover a::after {
+.work:hover .project-link::after {
     padding-left: 14px;
 }
 /* END WORK */

@@ -506,7 +506,11 @@ img.indiv-img {
     transition: all 0.1s linear;
 }
 
-.work a:hover::after {
+/* .work a:hover::after {
+    padding-left: 14px;
+} */
+
+.work:hover a::after {
     padding-left: 14px;
 }
 /* END WORK */

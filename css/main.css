@@ -489,6 +489,10 @@ img.indiv-img {
     max-width: 800px;
 }
 
+.work-link {
+    text-decoration: none;
+}
+
 .work .project-link {
     text-decoration: none;
     color: #ff5e62;

@@ -580,7 +580,10 @@ a.project-link::after {
 #proj3-img1,
 #proj3-img3,
 #proj4-img1,
-#proj4-img3 {
+#proj4-img3,
+#proj5-img1,
+#proj5-img3,
+#proj5-img5 {
     background: url(../img/bg/gry-btm.svg) no-repeat right bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -594,7 +597,9 @@ a.project-link::after {
 #proj2-img2,
 #proj2-img4,
 #proj3-img2,
-#proj4-img2 {
+#proj4-img2,
+#proj5-img2,
+#proj5-img4 {
     background: url(../img/bg/gry-top.svg) no-repeat right top;
     -webkit-background-size: cover;
     -moz-background-size: cover;

@@ -400,7 +400,7 @@ img.indiv-img {
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
-    background: #fe7b63;
+    background: #222529;
     border-radius: 50%;
     z-index: 1;
 }
@@ -459,9 +459,11 @@ img.indiv-img {
 
 #about {
     position: relative;
-    background: #ff9966;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #222529;  /* fallback for old browsers */
+    /*
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966); Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #ff5e62, #ff9966); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    */
     min-height: 100px;
     padding: 40px 0;
 }
@@ -658,9 +660,11 @@ a.project-link::after {
 .quote {
     padding: 80px 0;
     overflow: auto;
-    background: #ff9966;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #222529;  /* fallback for old browsers */
+    /*
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966); Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #ff5e62, #ff9966); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    */
     color: #fff;
 }
 

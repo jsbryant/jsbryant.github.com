@@ -365,35 +365,6 @@ img.indiv-img {
     margin-bottom: 10px;
 }
 
-/* OLD Button */
-/*
-#contact-btn {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    background: #ff9966;
-    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
-    background: linear-gradient(to right, #ff5e62, #ff9966);
-    padding: 10px 40px 12px;
-    border-radius: 50px;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
-    -webkit-transition: all 100ms ease-out;
-    -moz-transition: all 100ms ease-out;
-    -ms-transition: all 100ms ease-out;
-    -o-transition: all 100ms ease-out;
-    transition: all 100ms ease-out;
-}
-
-#contact-btn:hover {
-    -webkit-transform: translate3d(0,-3px,0);
-    -moz-transform: translate3d(0,-3px,0);
-    -ms-transform: translate3d(0,-3px,0);
-    transform: translate3d(0,-3px,0);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.08);
-}
-*/
-/* End OLD Button */
-
 /* BUTTON START */
 
 #contact-btn {
@@ -411,7 +382,7 @@ img.indiv-img {
   background: linear-gradient(to right, #ff5e62, #ff9966);
   background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
   border-radius: 50px;
-  transition: all 100ms ease-out;
+  /*transition: all 100ms ease-out;*/
 }
 
 #contact-btn:before {
@@ -429,10 +400,11 @@ img.indiv-img {
   border-radius: 50px;
   filter: blur(8px);
   -webkit-filter: blur(8px);
-  opacity: 0.7;
-  transition: all 100ms ease-out;
+  opacity: 0.5;
+  /*transition: all 100ms ease-out; */
 }
 
+/*
 #contact-btn:hover {
   -webkit-transform: translate3d(0,3px,0);
   -moz-transform: translate3d(0,3px,0);
@@ -448,6 +420,7 @@ img.indiv-img {
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
+*/
 
 /* BUTTON END */
 

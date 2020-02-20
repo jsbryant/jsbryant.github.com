@@ -405,6 +405,7 @@ img.indiv-img {
   color: #fff;
   width: 175px;
   height: 60px;
+  z-index: 9999;
   line-height: 60px;
   background: #ff9966;
   background: linear-gradient(to right, #ff5e62, #ff9966);

@@ -396,12 +396,6 @@ img.indiv-img {
 
 /* BUTTON START */
 
-.btn-wrapper {
-  position: relative;
-  top: 100px;
-  left: 50px;
-}
-
 #contact-btn {
   position: relative;
   display: inline-block;

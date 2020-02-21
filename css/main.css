@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-image: linear-gradient(0deg, #151E30 0%, #5E7683 100%);
+    background-image: -webkit-linear-gradient(0deg, #151E30 0%, #5E7683 100%);
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+   End Boilerplate CSS
+   ========================================================================== */
+
+#wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#left-container {
+    position: relative;
+    float: left;
+    width: 38.2%;
+    height: 100vh;
+    padding: 32px;
+    overflow: scroll;
+    box-sizing: border-box;
+    background: #151E30;
+    background-image: linear-gradient(0deg, #151E30 0%, #5E7683 100%);
+    background-image: -webkit-linear-gradient(0deg, #151E30 0%, #5E7683 100%);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#right-container {
+    position: relative;
+    float: right;
+    width: 61.8%;
+    height: 100vh;
+    background: url(../img/profile.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation-delay: 600ms;
+}
+
+#logo {
+    position: relative;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #fff;
+    margin: none;
+    margin-bottom: 32px;
+}
+
+p {
+    color: #C9CFD3;
+    margin-bottom: 40px;
+}
+
+a:link, a:visited {
+    color: #FB9948;
+    text-decoration: none;    
+}
+
+#resume {
+    display: block;
+    float: left;
+}
+
+#get-in-touch {
+    display: block;
+    float: right;
+    margin-bottom: 48px;
+}
+
+.social-icon {
+    margin-left: 16px;
+}
+
+#linkedin {
+    transform: translate3d(0,-2px,0);
+}
+
+#mail {
+    transform: translate3d(0,-1px,0);
+}
+
+.quote {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+#kemper, #chia {
+    float: left;
+    clear: right;
+}
+
+#stephanie, #tobias {
+    float: right;
+    clear: left;
+}
+
+/* Kemper bubble animation */
+
+#kemper {
+    animation-name: scaleUpLeft;
+    animation-duration: 250ms;
+    animation-delay: 2s;
+    opacity: 0;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleUpLeft {
+    0%   {transform: scale3d(0,0,0); opacity: 0;}
+    100% {transform: scale3d(1,1,1); opacity: 1;}
+}
+
+/* END Kemper bubble animation */
+
+
+/* Stephanie bubble animation */
+
+#stephanie {
+    animation-name: scaleUpRight;
+    animation-duration: 250ms;
+    animation-delay: 3s;
+    opacity: 0;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleUpRight {
+    0%   {transform: scale3d(0,0,0); opacity: 0;}
+    100% {transform: scale3d(1,1,1); opacity: 1;}
+}
+
+/* END Stephanie bubble animation */
+
+
+/* Chia bubble animation */
+
+#chia {
+    animation-name: scaleUpLeft;
+    animation-duration: 250ms;
+    animation-delay: 4s;
+    opacity: 0;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleUpLeft {
+    0%   {transform: scale3d(0,0,0); opacity: 0;}
+    100% {transform: scale3d(1,1,1); opacity: 1;}
+}
+
+/* END Chia bubble animation */
+
+
+/* Tobias bubble animation */
+
+#tobias {
+    animation-name: scaleUpRight;
+    animation-duration: 250ms;
+    animation-delay: 5s;
+    opacity: 0;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleUpRight {
+    0%   {transform: scale3d(0,0,0); opacity: 0;}
+    100% {transform: scale3d(1,1,1); opacity: 1;}
+}
+
+/* END Tobias bubble animation */
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1025px) {
+    #left-container {
+        width: 61.8%;
+    }
+    #right-container {
+        width: 38.2%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #right-container {
+        display: none;
+    }
+    #left-container {
+        width: 100vw;
+        background: url(../img/profile-m.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+

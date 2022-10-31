@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;500&display=swap');
 
 * {
     margin: 0;
@@ -6,11 +6,11 @@
 }
 
 html {
-    font-size: 1em;
-    line-height: 1.5;
-    font-family: 'IBM Plex Sans', sans-serif;
-    background-image: linear-gradient(0deg, #151E30 0%, #5E7683 100%);
-    background-image: -webkit-linear-gradient(0deg, #151E30 0%, #5E7683 100%);
+    font-size: 1.8em;
+    line-height: 2;
+    font-family: 'Sora', sans-serif;
+    background-color: #0c0c11;
+    font-weight: 200;
 }
 
 /*
@@ -283,45 +283,29 @@ textarea {
    ========================================================================== */
 
 #wrapper {
-    position: relative;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
-#left-container {
-    position: relative;
-    float: left;
-    width: 38.2%;
-    height: 100vh;
-    padding: 32px;
-    overflow: scroll;
-    box-sizing: border-box;
-    background: #151E30;
-    background-image: linear-gradient(0deg, #151E30 0%, #5E7683 100%);
-    background-image: -webkit-linear-gradient(0deg, #151E30 0%, #5E7683 100%);
+#content-main, #content-inner1, #content-inner2, #content-inner3 {
+    display: flex;
 }
 
-::-webkit-scrollbar {
-    display: none;
+#content-main {
+    max-width: 960px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
 }
 
-#right-container {
-    position: relative;
-    float: right;
-    width: 61.8%;
-    height: 100vh;
-    background: url(../img/profile.png) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    animation-delay: 600ms;
+#content-inner1 {
+    justify-content: flex-start;
 }
 
-#logo {
-    position: relative;
-    margin-bottom: 40px;
-    display: inline-block;
+#content-inner2 {
+    justify-content: flex-start;
 }
 
 h1 {
@@ -338,165 +322,31 @@ p {
     margin-bottom: 40px;
 }
 
+.highlight {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
 a:link, a:visited {
-    color: #FB9948;
-    text-decoration: none;    
+    color: #e91e63;
+    text-decoration: none;
+    border-bottom: 2px solid #e91e63;    
 }
 
-#resume {
+#resume, #contact {
     display: block;
     float: left;
+    line-height: 1.25em;
+    margin-right: 2em;
 }
 
-#get-in-touch {
-    display: block;
-    float: right;
-    margin-bottom: 48px;
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 1.25em;
+    line-height: 1.8;
+  }
 }
 
-.social-icon {
-    margin-left: 16px;
-}
-
-#linkedin {
-    transform: translate3d(0,-2px,0);
-}
-
-#mail {
-    transform: translate3d(0,-1px,0);
-}
-
-.quote {
-    position: relative;
-    margin-bottom: 8px;
-}
-
-#kemper, #chia {
-    float: left;
-    clear: right;
-}
-
-#stephanie, #tobias {
-    float: right;
-    clear: left;
-}
-
-/* Kemper bubble animation */
-
-#kemper {
-    animation-name: scaleUpLeft;
-    animation-duration: 250ms;
-    animation-delay: 2s;
-    opacity: 0;
-    -webkit-transform: scale3d(0,0,0);
-    transform: scale3d(0,0,0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-@keyframes scaleUpLeft {
-    0%   {transform: scale3d(0,0,0); opacity: 0;}
-    100% {transform: scale3d(1,1,1); opacity: 1;}
-}
-
-/* END Kemper bubble animation */
-
-
-/* Stephanie bubble animation */
-
-#stephanie {
-    animation-name: scaleUpRight;
-    animation-duration: 250ms;
-    animation-delay: 3s;
-    opacity: 0;
-    -webkit-transform: scale3d(0,0,0);
-    transform: scale3d(0,0,0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-@keyframes scaleUpRight {
-    0%   {transform: scale3d(0,0,0); opacity: 0;}
-    100% {transform: scale3d(1,1,1); opacity: 1;}
-}
-
-/* END Stephanie bubble animation */
-
-
-/* Chia bubble animation */
-
-#chia {
-    animation-name: scaleUpLeft;
-    animation-duration: 250ms;
-    animation-delay: 4s;
-    opacity: 0;
-    -webkit-transform: scale3d(0,0,0);
-    transform: scale3d(0,0,0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-@keyframes scaleUpLeft {
-    0%   {transform: scale3d(0,0,0); opacity: 0;}
-    100% {transform: scale3d(1,1,1); opacity: 1;}
-}
-
-/* END Chia bubble animation */
-
-
-/* Tobias bubble animation */
-
-#tobias {
-    animation-name: scaleUpRight;
-    animation-duration: 250ms;
-    animation-delay: 5s;
-    opacity: 0;
-    -webkit-transform: scale3d(0,0,0);
-    transform: scale3d(0,0,0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-@keyframes scaleUpRight {
-    0%   {transform: scale3d(0,0,0); opacity: 0;}
-    100% {transform: scale3d(1,1,1); opacity: 1;}
-}
-
-/* END Tobias bubble animation */
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 1025px) {
-    #left-container {
-        width: 61.8%;
-    }
-    #right-container {
-        width: 38.2%;
-    }
-}
-
-@media screen and (max-width: 769px) {
-    #right-container {
-        display: none;
-    }
-    #left-container {
-        width: 100vw;
-        background: url(../img/profile-m.png) no-repeat center center; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-}
 
 
 

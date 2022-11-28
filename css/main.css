@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
 
 * {
     margin: 0;
@@ -306,8 +306,8 @@ textarea {
 }
 
 h1 {
+    font-family: 'Space Mono', monospace;
     font-size: 3em;
-    font-weight: 600;
     line-height: 1;
     color: #fff;
     margin: none;

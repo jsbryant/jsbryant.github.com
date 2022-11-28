@@ -324,8 +324,8 @@ p {
 }
 
 a:link, a:visited {
-    color: #fff;
-    text-decoration: underline;
+    color: #ff6d6d;
+    text-decoration: none;
 }
 
 #resume, #contact {

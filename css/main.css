@@ -294,6 +294,7 @@ textarea {
 
 #content-inner1, #content-inner2 {
     padding: 1em;
+    flex-direction: column;
 }
 
 #content-main {
@@ -303,12 +304,57 @@ textarea {
     padding: 3em 1em;
 }
 
+#avatar {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#avatar:hover {
+    transform: scale(1.05);
+    transition: all 150ms ease;
+}
+
+#avatar1, #avatar2 {
+    padding-bottom: 1em;
+}
+
+#avatar1 {
+    position: relative;
+    z-index: 1;
+}
+
+/*#avatar1:hover {
+    opacity: 0;
+}*/
+
+#avatar2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+
+#envelope {
+    position: relative;
+    top: 0.08em;
+    font-size: 1.25em;
+}
+
 h1 {
     font-size: 3em;
     font-weight: 600;
-    line-height: 1;
+    line-height: 0.95;
     color: #fff;
     margin: none;
+    margin-bottom: 0.5em;
+}
+
+.lft-col {
+    font-weight: 300;
+    line-height: 150%;
+    color: #a4adb2;
+    margin-bottom: 1em;
 }
 
 p {
@@ -319,21 +365,9 @@ p {
     line-height: 170%;
 }
 
-.highlight {
-    font-size: 1.25em;
-    font-weight: 500;
-}
-
 a:link, a:visited {
     color: #ff6d6d;
     text-decoration: none;
-}
-
-#resume, #contact {
-    display: block;
-    float: left;
-    line-height: 1.25em;
-    margin-right: 2em;
 }
 
 @media screen and (max-width: 700px) {
@@ -345,5 +379,6 @@ a:link, a:visited {
 
   #content-inner1 {
     justify-content: space-around;
+    align-items: center;
   }
 }

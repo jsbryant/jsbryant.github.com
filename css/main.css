@@ -381,4 +381,8 @@ a:link, a:visited {
     justify-content: space-around;
     align-items: center;
   }
+    
+  .lft-col {
+    text-align: center;
+  }
 }

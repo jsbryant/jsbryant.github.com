@@ -299,7 +299,7 @@ textarea {
 }
 
 #content-main {
-    max-width: 70vw;
+    max-width: 960px;
     flex-direction: row;
     justify-content: center;
     padding: 3em 1em;

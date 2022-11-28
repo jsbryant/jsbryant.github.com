@@ -382,7 +382,7 @@ a:link, a:visited {
     align-items: center;
   }
     
-  .lft-col {
+  h1, .lft-col {
     text-align: center;
   }
 }

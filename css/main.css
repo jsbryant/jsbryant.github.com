@@ -364,17 +364,54 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+/*CONTACT BTN START*/
+
 #contact {
-    background-color: #403e4d;
+    background: #54526d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2f2d41, #54526d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2f2d41, #54526d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border: none;
-    border-radius: 2em;
-    padding: 1em;
+    border-radius: 1.5em;
+    padding: 0.75em 0.5em 0.75em 0.75em;
+    margin-bottom: 1em;
     text-align: center;
+    transition: all 250ms ease;
 }
 
+#contact:hover {
+    background-color: rgba(255,255,255,0.25);
+}
+
+.HoverArrow {
+    position: relative;
+    top: -1px;
+    margin-left: 5px;
+    stroke-width: 2px;
+    fill: none;
+    stroke: currentColor;
+}
+
+.HoverArrow__tipPath, .HoverArrow__linePath {
+    transition: all 250ms ease;
+}
+
+.HoverArrow__linePath {
+    opacity: 0;
+}
+
+#contact:hover .HoverArrow__tipPath {
+    transform: translateX(3px);
+}
+
+#contact:hover .HoverArrow__linePath {
+    opacity: 1;
+}
+
+/*CONTACT BTN END*/
+
 @media screen and (max-width: 700px) {
-  
+
   #content-main {
     flex-direction: column;
     max-width: 90vw;  
@@ -395,7 +432,7 @@ a:link, a:visited {
 
   #contact {
     border-radius: 3em;
-    padding: 1em 4em;
+    padding: 1em 3.5em 1em 4em;
   }
 
 }

@@ -335,12 +335,6 @@ textarea {
     z-index: -999;
 }
 
-#envelope {
-    position: relative;
-    top: 0.08em;
-    font-size: 1.25em;
-}
-
 h1 {
     font-size: 3em;
     font-weight: 600;
@@ -370,6 +364,15 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+#contact {
+    background-color: #403e4d;
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
 @media screen and (max-width: 700px) {
   
   #content-main {
@@ -381,8 +384,18 @@ a:link, a:visited {
     justify-content: space-around;
     align-items: center;
   }
-    
+
   h1, .lft-col {
     text-align: center;
   }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #contact {
+    border-radius: 3em;
+    padding: 1em 4em;
+  }
+
 }

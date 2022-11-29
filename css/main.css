@@ -1,17 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-family: system-ui, 'Helvetica', sans-serif;
-    background: rgb(29,28,41);
-    background: -moz-radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
-    background: radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1c29",endColorstr="#000000",GradientType=1);
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -280,6 +266,20 @@ textarea {
 /* ==========================================================================
    End Boilerplate CSS
    ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: system-ui, 'Helvetica', sans-serif;
+    background: rgb(29,28,41);
+    background: -moz-radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1c29",endColorstr="#000000",GradientType=1);
+}
+
 
 #wrapper {
     width: 100vw;
@@ -348,7 +348,7 @@ h1 {
     font-weight: 300;
     line-height: 150%;
     color: #a4adb2;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 p {

@@ -449,6 +449,7 @@ a:link, a:visited {
 
   h1 {
     font-size: 2.5rem;
+      letter-spacing: 1px;
   }
 
   #contact {

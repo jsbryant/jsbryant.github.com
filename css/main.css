@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -272,14 +274,12 @@ textarea {
 }
 
 html {
-    font-family: system-ui, 'Helvetica', sans-serif;
-    background: rgb(29,28,41);
-    background: -moz-radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
-    background: radial-gradient(circle, rgba(29,28,41,1) 0%, rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1c29",endColorstr="#000000",GradientType=1);
+    font-family: 'Rubik', sans-serif;
+    background-color: #140524;
+    background-image: radial-gradient(at 26% 32%, hsla(215, 65%, 44%, 1) 0, hsla(215, 85%, 64%, 0) 50%),
+    radial-gradient(at 89% 59%, hsla(310, 72%, 29%, 1) 0, hsla(310, 92%, 69%, 0) 50%),
+    radial-gradient(at 31% 34%, hsla(360, 73%, 42%, 1) 0, hsla(360, 93%, 52%, 0) 50%);
 }
-
 
 #wrapper {
     width: 100vw;
@@ -293,15 +293,17 @@ html {
 }
 
 #content-inner1, #content-inner2 {
-    padding: 1em;
+    padding: 1rem;
     flex-direction: column;
+    top: 3rem;
+    left: 0;
 }
 
 #content-main {
-    max-width: 960px;
+    max-width: 60rem;
     flex-direction: row;
     justify-content: center;
-    padding: 3em 1em;
+    padding: 3rem 1rem;
 }
 
 #avatar {
@@ -316,7 +318,7 @@ html {
 }
 
 #avatar1, #avatar2 {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 #avatar1 {
@@ -335,28 +337,52 @@ html {
     z-index: -999;
 }
 
+#section-1 {
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background: rgba(255 255 255 / 10%);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgb(255 255 255 / 20%), rgb(255 255 255 / 5%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgb(255 255 255 / 20%), rgb(255 255 255 / 5%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 20px 40px rgb(0 0 0 / 15%), inset 0 20px 40px rgb(0 0 0 / 15%) ;
+    margin-bottom: 40px;
+}
+
 h1 {
-    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    font-kerning: normal;
+    text-transform: uppercase;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 0.95;
     color: #fff;
     margin: none;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 1rem;
+
 }
 
 .lft-col {
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 150%;
-    color: #a4adb2;
-    margin-bottom: 1.5em;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 1.5rem;
 }
 
 p {
-    color: #a4adb2;
-    margin-bottom: 40px;
+    color: rgba(255,255,255,0.75);
+    font-size: 1.2rem;
     font-weight: 300;
-    font-size: 1.25em;
-    line-height: 170%;
+    font-kerning: normal;
+    line-height: 150%;
 }
 
 a:link, a:visited {
@@ -367,20 +393,15 @@ a:link, a:visited {
 /*CONTACT BTN START*/
 
 #contact {
-    background: #54526d;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2f2d41, #54526d);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2f2d41, #54526d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-weight: 400;
+    background-color: #ff6d6d;
     color: #fff;
     border: none;
-    border-radius: 1.5em;
-    padding: 0.75em 0.5em 0.75em 0.75em;
-    margin-bottom: 1em;
+    border-radius: 1.5rem;
+    padding: 0.75rem 0.5rem 0.75rem 0.75rem;
+    margin-bottom: 1rem;
     text-align: center;
     transition: all 250ms ease;
-}
-
-#contact:hover {
-    background-color: rgba(255,255,255,0.25);
 }
 
 .HoverArrow {
@@ -427,12 +448,12 @@ a:link, a:visited {
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
   #contact {
-    border-radius: 3em;
-    padding: 1em 3.5em 1em 4em;
+    border-radius: 3rem;
+    padding: 1rem 3.5rem 1rem 4rem;
   }
 
 }

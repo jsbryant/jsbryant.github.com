@@ -487,6 +487,10 @@ li {
     max-width: 90vw;  
   }
 
+  #content-inner1, #content-inner2 {
+    padding: 1rem 0;
+  }
+
   #content-inner1 {
     justify-content: space-around;
     align-items: center;
@@ -501,7 +505,7 @@ li {
   }
 
   li {
-    margin-left: 0;
+    margin-left: 0.9rem;
     margin-right: 0;
   }
 

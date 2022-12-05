@@ -435,7 +435,8 @@ li {
 }
 
 #contact:hover {
-    background-color: rgb(255 255 255 / 25%);
+    background-color: #ff3970;
+    border-color: #ff3970;
 }
 
 .HoverArrow {

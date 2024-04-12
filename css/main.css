@@ -326,9 +326,9 @@ html {
 
 #section-4 {
     border-radius: 0.75rem;
-    background: #c0392b;
-    background: -webkit-linear-gradient(to left, #8e44ad, #c0392b);
-    background: linear-gradient(to left, #8e44ad, #c0392b);
+    background: rgba(255,255,255,0.1);
+/*     background: -webkit-linear-gradient(to left, #8e44ad, #c0392b);
+    background: linear-gradient(to left, #8e44ad, #c0392b); */
     padding: 1rem;
     margin-bottom: 3rem;
 }
@@ -337,7 +337,7 @@ html {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 2rem;
-    background-color: rgb(255 255 255 / 15%);
+    background-color: rgb(255 255 255 / 10%);
     color: rgb(255 255 255 / 75%);
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;

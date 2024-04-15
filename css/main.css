@@ -343,16 +343,43 @@ html {
     border-radius: 1rem;
 }
 
-h1 {
+.header {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 3.5rem;
     line-height: 0.95;
     color: #f5f5f5;
     font-weight: 500;
-    /*-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-    margin-bottom: 1.5rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.up-in {
+    animation: up-in 750ms ease 100ms backwards;
+}
+
+.up-in-2 {
+    animation: up-in 750ms ease 200ms backwards;
+}
+
+@keyframes up-in {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 h2 {
@@ -433,7 +460,7 @@ li {
     border: 2px solid rgb(255 255 255 / 15%);
     border-radius: 1.5rem;
     padding: 0.75rem 0.5rem 0.75rem 0.75rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     text-align: center;
     transition: all 250ms ease;
 }
@@ -466,6 +493,19 @@ li {
 
 #contact:hover .HoverArrow__linePath {
     opacity: 1;
+}
+
+.fade-in {
+    animation: fade-in 750ms ease 400ms backwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #quotes {

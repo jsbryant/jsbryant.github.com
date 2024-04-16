@@ -429,10 +429,10 @@ h3 {
 }
 
 p {
-    color: rgba(255,255,255,0.9);
-    font-size: 1.25rem;
+    color: rgba(255,255,255,0.75);
+    font-size: 1.1rem;
     font-weight: 300;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
@@ -444,9 +444,9 @@ a:link, a:visited {
 
 li {
     color: rgba(255,255,255,0.75);
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 150%;
+    line-height: 1.6;
     margin: 0 2rem;
     margin-bottom: 1rem;
 }

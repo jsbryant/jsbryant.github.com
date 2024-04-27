@@ -438,6 +438,7 @@ a:link, a:visited {
     color: #fff;
     text-decoration: none;
     font-weight: 400;
+    transition: all 0.2s ease;
 }
 
 a:hover, a:active {

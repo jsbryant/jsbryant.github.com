@@ -276,7 +276,7 @@ textarea {
 
 html {
     font-family: 'Roboto', sans-serif;
-    background: #000;
+    background: #544993;
 }
 
 #wrapper {
@@ -326,7 +326,7 @@ html {
 
 #section-4 {
     border-radius: 0.75rem;
-    background: #54535b;
+    background: #000;
     padding: 1rem;
     margin-bottom: 3rem;
 }
@@ -335,7 +335,7 @@ html {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 2rem;
-    background-color: rgba(255 255 255 / 15%);
+    background-color: #2e2e31;
     color: rgb(255 255 255 / 75%);
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;

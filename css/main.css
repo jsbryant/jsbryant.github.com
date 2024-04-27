@@ -427,7 +427,7 @@ h3 {
 }
 
 p {
-    color: rgba(255,255,255,0.75);
+    color: #fff;
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.6;
@@ -438,6 +438,10 @@ a:link, a:visited {
     color: #fff;
     text-decoration: none;
     font-weight: 400;
+}
+
+a:hover, a:active {
+    color: #a192ff;
 }
 
 li {

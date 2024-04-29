@@ -516,7 +516,7 @@ li {
 }
 
 .HoverArrow__tipPath, .HoverArrow__linePath {
-    transition: all 250ms ease;
+    transition: all 100ms ease;
 }
 
 .HoverArrow__linePath {
@@ -559,7 +559,6 @@ footer {
     text-align: center;
     color: rgb(255 255 255 / 30%);
     padding: 1rem;
-/*     background-color: #16141f; */
 }
 
 /*CONTACT BTN END*/
@@ -596,8 +595,9 @@ footer {
   #contact {
     border-radius: 3rem;
     padding: 0.75rem 2rem 0.75rem 2rem;
-    background-color: #000;
-    border-color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
   }
 
   .HoverArrow__tipPath {

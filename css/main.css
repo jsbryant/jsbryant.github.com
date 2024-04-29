@@ -306,12 +306,12 @@ html {
 
 #section-1 {
     border-radius: 0.75rem;
-    background: #000;
+    background: #9ae32c;
     padding: 1rem;
     margin-bottom: 3rem;
 }
 
-#section-1 h3, p {
+#section-1 h3, #section-1 p {
     color: #000;
 }
 

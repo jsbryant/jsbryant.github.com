@@ -345,7 +345,7 @@ html {
     border-radius: 0.75rem;
     background: #000;
     padding: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #section-4 span {
@@ -357,6 +357,17 @@ html {
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
 }
+
+#section-5 {
+    border-radius: 0.75rem;
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#section-5 h3, #section-5 p {
+    color: #000;
+}  
 
 .header {
     font-family: 'Oswald', sans-serif;

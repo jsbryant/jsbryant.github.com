@@ -367,6 +367,10 @@ html {
 
 #section-5 h3, #section-5 p {
     color: #000;
+}
+
+#section-5 a:link, #section-5 a:visited {
+    color: #000;
 }  
 
 .header {

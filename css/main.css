@@ -304,7 +304,15 @@ html {
     padding: 3rem 1rem;
 }
 
-#section-2 {
+#section-1 {
+    border-radius: 0.75rem;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* #section-2 {
     margin-bottom: 1.25rem;
 }
 
@@ -318,7 +326,7 @@ html {
 #section-2 span::before {
     content: '— ';
     color: rgba(255 255 255 / 60%);
-}
+} */
 
 #section-3 {
 /*     margin: 2rem 0; */

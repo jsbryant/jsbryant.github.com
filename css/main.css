@@ -486,8 +486,9 @@ li {
 }
 
 #contact:hover {
-    background-color: #7761ff;
-    border-color: #7761ff;
+    background-color: #4e03e1;
+    border-color: #4e03e1;
+    color: #fff;
 }
 
 .HoverArrow {

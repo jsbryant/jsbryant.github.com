@@ -360,18 +360,18 @@ html {
 
 #section-5 {
     border-radius: 0.75rem;
-    background: #fff;
+    background: #9a9aa9;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
-#section-5 h3, #section-5 p {
+/* #section-5 h3, #section-5 p {
     color: #000;
 }
 
 #section-5 a:link, #section-5 a:visited {
     color: #000;
-}  
+}   */
 
 .header {
     font-family: 'Oswald', sans-serif;

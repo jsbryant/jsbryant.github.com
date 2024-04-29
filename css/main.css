@@ -441,9 +441,9 @@ a:link, a:visited {
     transition: all 0.2s ease;
 }
 
-a:hover, a:active {
+/* a:hover, a:active {
     color: #a192ff;
-}
+} */
 
 li {
     color: rgba(255,255,255,0.75);
@@ -458,9 +458,9 @@ li {
 
 #contact {
     font-weight: 400;
-    background-color: #7761ff;
+    background-color: #000;
     color: #f5f5f5;
-    border: 2px solid #7761ff;
+    border: 2px solid #000;
     border-radius: 1.5rem;
     padding: 0.75rem 1rem 0.75rem 1rem;
     margin: 1rem 0;
@@ -469,8 +469,8 @@ li {
 }
 
 #contact:hover {
-    background-color: #000;
-    border-color: #000;
+    background-color: #7761ff;
+    border-color: #7761ff;
 }
 
 .HoverArrow {

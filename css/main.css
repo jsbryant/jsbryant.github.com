@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap'); */
+@import url("https://use.typekit.net/olh6qyv.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 /*
  * Remove text-shadow in selection highlight:
@@ -350,12 +351,15 @@ html {
 }
 
 .header {
-    font-family: 'Oswald', sans-serif;
+/*     font-family: 'Oswald', sans-serif; */
+    font-family: "degular", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     text-transform: uppercase;
     font-size: 3.5rem;
     line-height: 0.95;
     color: #fff;
-    font-weight: 500;
+/*     font-weight: 500; */
 }
 
 .overflow-hidden {
@@ -412,7 +416,10 @@ lord-icon {
 }
 
 h3 {
-    font-family: 'Oswald', sans-serif;
+/*     font-family: 'Oswald', sans-serif; */
+    font-family: "degular", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.25rem;
     letter-spacing: 0.05rem;
     text-transform: uppercase;

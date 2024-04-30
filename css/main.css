@@ -449,9 +449,9 @@ a:link, a:visited {
     transition: all 0.2s ease;
 }
 
-a:hover, a:active {
+/* a:hover, a:active {
     color: #4e03e1;
-}
+} */
 
 li {
     color: rgba(255,255,255,0.75);

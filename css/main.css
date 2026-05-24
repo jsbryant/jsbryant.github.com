@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200;700&display=swap');
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 2px;
+    width: 90%;
+    border: 0;
+    border-top: 2px solid rgb(255 255 255 / 20%);
+    margin: 2rem auto;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+   End Boilerplate CSS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Mozilla Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0 auto; 
+    width: 100%;
+    background-color: #1a1a1a;
+    font-size: 0.9rem;
+    color: #949494;
+    line-height: 1.6;
+}
+
+/* Keeps the full-screen background dark and centered */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading-screen.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* --- Custom SVG Infinite Animation Loop --- */
+svg.active .svg-elem-1 {
+    stroke-dasharray: 1627.04px;
+    /* Uses the exact cubic-bezier timing from SVG Artista, but loops infinitely */
+    animation: drawAndErase 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+
+@keyframes drawAndErase {
+    0% {
+        stroke-dashoffset: 1627.04px; /* Completely invisible */
+    }
+    50% {
+        stroke-dashoffset: 0px; /* Fully drawn out */
+    }
+    100% {
+        stroke-dashoffset: -1627.04px; /* Fully erased onward, loops cleanly back to 0% */
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 16px 16px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #444;
+    z-index: 3;
+}
+
+nav .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#logo {
+    position: relative;
+    top: 5px;
+}
+
+.name {
+    font-family: "Mozilla Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-family: "Mozilla Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: #fff;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+.section {
+    padding: 20px 16px;
+    margin-bottom: 8px;
+}
+
+.section .container, .project .container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.company-details .container {
+    border-bottom: 1px solid #444;
+    padding-bottom: 40px;
+}
+
+.project {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.project .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-detail-image {
+    border-radius: 4px;
+}
+
+.project h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transform: translateY(15px); 
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project:hover h1 {
+    transform: translateY(0); /* Pulls it up back to its original position */
+    opacity: 1; /* Fades it in completely */
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.project:hover::before {
+    opacity: 1;
+}
+
+.project-dh {
+    background-image: url('../images/dh-bg.png');
+}
+
+.project-hpe {
+    background-image: url('../images/hpe-bg.png');
+}
+
+.project-vrz {
+    background-image: url('../images/vrz-bg.png');
+}
+
+.project-dtv {
+    background-image: url('../images/dtv-bg.png');
+}
+
+.project-psn {
+    background-image: url('../images/psn-bg.png');
+}
+
+.hero {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.dh-hero {
+    background-image: url('../images/dh-bg.png');
+}
+
+.hpe-hero {
+    background-image: url('../images/hpe-bg.png');
+}
+
+.vrz-hero {
+    background-image: url('../images/vrz-bg.png');
+}
+
+.dtv-hero {
+    background-image: url('../images/dtv-bg.png');
+}
+
+.psn-hero {
+    background-image: url('../images/psn-bg.png');
+}
+
+.project-detail .container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.project-detail-image {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 300px;
+    margin: 40px 0;
+    background-size: cover;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+}
+
+.dh-image-01 {
+    background-image: url('https://imagedelivery.net/QopPmq6sPZVeeWT6S9SiOQ/2a18549f-c5f5-4246-4ef5-b79a902cfb00/w=1400,h=933');
+}
+
+.hpe-image-01 {
+    background-image: url('https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/generic-named/c-e/CIC-London-Experience-zone-9-16-9.jpg');
+}
+
+.clickable-section-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.clickable-section-wrapper:hover .project-dh {
+    cursor: pointer;
+}
+
+.video-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;   /* Removes any default inline bottom whitespace gaps */
+}
+
+figure {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    padding-top: 8px;
+    letter-spacing: 0.05rem;
+}
+
+.home {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+span {
+    color: #fff;
+}
+
+li {
+    line-height: 2;
+}
+
+ol {
+    padding-left: 40px;
+    list-style-type: decimal-leading-zero;
+    counter-reset: item; /* Starts the counter */
+}
+
+ol li {
+    counter-increment: item; /* Tells each item to add 1 */
+}
+
+ol li::marker {
+    content: counter(item, decimal-leading-zero) " - "; /* Displays the correct calculated number */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.row .column {
+    flex: 1;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h1 {
+    font-size: 3rem;
+}
+
+.svg-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+}
+
+.hidden-title {
+    visibility: hidden;
+    margin: 0;
+}
+
+#bottom-links .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#bottom-links a {
+    padding: 0 16px;
+}
+
+.vroozi-image-1 {
+    height: 300px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #444;
+}
+
+/* ==========================================================================
+   Image Grid Layout Fixes
+   ========================================================================== */
+
+/* 1. Force the row elements to stretch across the full container width */
+#image-01 .row {
+  width: 100%;
+}
+
+/* 2. Force the images within this section to be completely fluid */
+#image-01 img {
+  width: 100%;
+  /*height: auto;*/
+  display: block; /* Eliminates the default native whitespace gap under images */
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .cols-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #image-01 .row {
+        gap: 40px; /* Puts consistent spacing between stacked images on mobile screens */
+    }
+
+    ul {
+    padding-left: 20px;
+    }
+
+    #scope .column, #proposal .column, #outcome .column {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 483px) {
+    .project-detail-image {
+        background-position: 60% 30%;
+    }
+}
+
+@media (max-width: 355px) {
+    .name {
+        line-height: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-delay: 0s !important;
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: scroll !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+    }
+}

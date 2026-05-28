@@ -537,6 +537,17 @@ main {
     background-repeat: no-repeat;
 }
 
+#proposal .row {
+    align-items: flex-start;
+}
+
+#proposal img {
+    max-width: 50%; /* Adjust this percentage to get the exact design scale you want */
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 .dh-image-01 {
     background-image: url('https://imagedelivery.net/QopPmq6sPZVeeWT6S9SiOQ/2a18549f-c5f5-4246-4ef5-b79a902cfb00/w=1400,h=933');
 }

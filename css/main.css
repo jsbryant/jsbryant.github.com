@@ -437,10 +437,6 @@ main {
     justify-content: flex-end;
 }
 
-.project-detail-image {
-    border-radius: 4px;
-}
-
 .project h1 {
     position: absolute;
     bottom: 20px;
@@ -535,6 +531,7 @@ main {
     background-size: cover;
     background-position: 0 30%;
     background-repeat: no-repeat;
+    border-radius: 4px;
 }
 
 #proposal .row {

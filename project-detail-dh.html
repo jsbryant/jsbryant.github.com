@@ -226,16 +226,16 @@
                 setTimeout(() => {
                     loadingScreen.remove();
                     
-                    // 3. Initialize your existing scroll reveals
+                // 3. Initialize your existing scroll reveals
                     AOS.init({
                         duration: 800,
                         once: true,
                     });
 
-                    // 4. Register the GSAP scroll tracking mechanism
+                // 4. Register the GSAP scroll tracking mechanism
                     gsap.registerPlugin(ScrollTrigger);
 
-                    // 5. Target the SVG graphic containers inside your columns
+                // 5. Target the SVG graphic containers inside your columns
                     const svgContainers = document.querySelectorAll('#scope .column .svg-image');
 
                     // Set the starting positions (invisible, shrunk down, and shifted down 30px)
@@ -246,7 +246,7 @@
                         transformOrigin: "center center"
                     });
 
-                    // 6. Animate them with a traditional smooth easeOut
+                // 6. Animate them with a traditional smooth easeOut
                     gsap.to(svgContainers, {
                         opacity: 1,
                         scale: 0.60,
@@ -259,6 +259,35 @@
                             start: "top 75%",
                             toggleActions: "play none none none"
                         }
+                    });
+
+                    // ==========================================================================
+                    // Case Study Images - Scroll Reveal Animation
+                    // ==========================================================================
+
+                    // 1. Target all case study images, explicitly ignoring the first major detail image
+                    const detailImages = document.querySelectorAll('.project-detail img, .project-detail-image:not(.dh-image-01)');
+
+                    // 2. Set their initial invisible, shifted state
+                    gsap.set(detailImages, {
+                        opacity: 0,
+                        y: 40,
+                        transformOrigin: "center center"
+                    });
+
+                    // 3. Create the scroll-triggered reveal animation for each image
+                    detailImages.forEach((img) => {
+                        gsap.to(img, {
+                            opacity: 1,
+                            y: 0,
+                            duration: 1.2,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: img,           // Each individual image triggers its own animation
+                                start: "top 85%",       // Animation starts when the top of the image hits 85% from the top of the viewport
+                                toggleActions: "play none none none" // Plays once when scrolling down, doesn't reverse
+                            }
+                        });
                     });
 
                 }, 500); 

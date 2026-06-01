@@ -300,24 +300,26 @@
                     // Layered Cake - ScrollDriven Explosion (Y-Axis)
                     // ==========================================================================
                     
-                    // Create a scrubbed timeline linked entirely to the viewport scroll
                     const cakeTimeline = gsap.timeline();
 
+                    // Layer 5 (Top Layer): Stays fully visible the entire time, just slides up
                     cakeTimeline.to(".cake-layer-5", { y: "-40%", ease: "none" }, 0)
-                                .to(".cake-layer-4", { y: "-20%", ease: "none" }, 0)
-                                .to(".cake-layer-3", { y: "0%",   ease: "none" }, 0) 
-                                .to(".cake-layer-2", { y: "20%",  ease: "none" }, 0)
-                                .to(".cake-layer-1", { y: "35%",  ease: "none" }, 0);
 
-                    // 2. Attach the timeline to a Pinned ScrollTrigger scene
+                    // Layers 4 through 1: Start completely hidden and fade up to full opacity (1) as they expand
+                                .to(".cake-layer-4", { y: "-20%", opacity: 1, ease: "none" }, 0)
+                                .to(".cake-layer-3", { y: "0%",   opacity: 1, ease: "none" }, 0) // Anchor Layer
+                                .to(".cake-layer-2", { y: "20%",  opacity: 1, ease: "none" }, 0)
+                                .to(".cake-layer-1", { y: "35%",  opacity: 1, ease: "none" }, 0);
+
+                    // 2. Attach the timeline to your Pinned ScrollTrigger scene
                     ScrollTrigger.create({
                         animation: cakeTimeline,
-                        trigger: "#outcome",       // Trigger on the parent layout row section
-                        start: "top 30%",          // Pins the section when it hits the upper viewport area
-                        end: "+=300",              // HARD STOP POINT: Keeps it pinned for exactly 300px of scroll distance, then freezes!
-                        scrub: 1,                  // Smooth tracking speed
-                        pin: true,                 // Holds the entire section layout locked in place during the separation
-                        pinSpacing: true           // Pushes downstream content down so nothing clips over your text
+                        trigger: "#outcome",       
+                        start: "top 30%",          
+                        end: "+=300",              
+                        scrub: 1,                  
+                        pin: true,                 
+                        pinSpacing: true
                     });
 
                 }, 500); 

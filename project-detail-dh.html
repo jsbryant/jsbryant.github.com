@@ -301,21 +301,24 @@
                     // ==========================================================================
                     
                     // Create a scrubbed timeline linked entirely to the viewport scroll
-                    const cakeTimeline = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: "#layerCakeTrigger",
-                            start: "top 85%",    // Starts expanding when the container enters the frame lower down
-                            end: "bottom 15%",   // Finishes expanding closer to the top output
-                            scrub: 1             
-                        }
-                    });
+                    const cakeTimeline = gsap.timeline();
 
-                    // Pulling layers outwards along the Y axis
-                    cakeTimeline.to(".cake-layer-5", { y: "-160px", ease: "none" }, 0)
-                                .to(".cake-layer-4", { y: "-160px",  ease: "none" }, 0)
-                                .to(".cake-layer-3", { y: "20px",    ease: "none" }, 0) // Anchor layer
-                                .to(".cake-layer-2", { y: "100px",   ease: "none" }, 0)
-                                .to(".cake-layer-1", { y: "160px",  ease: "none" }, 0);
+                    cakeTimeline.to(".cake-layer-5", { y: "-40%", ease: "none" }, 0)
+                                .to(".cake-layer-4", { y: "-20%", ease: "none" }, 0)
+                                .to(".cake-layer-3", { y: "0%",   ease: "none" }, 0) 
+                                .to(".cake-layer-2", { y: "20%",  ease: "none" }, 0)
+                                .to(".cake-layer-1", { y: "35%",  ease: "none" }, 0);
+
+                    // 2. Attach the timeline to a Pinned ScrollTrigger scene
+                    ScrollTrigger.create({
+                        animation: cakeTimeline,
+                        trigger: "#outcome",       // Trigger on the parent layout row section
+                        start: "top 30%",          // Pins the section when it hits the upper viewport area
+                        end: "+=300",              // HARD STOP POINT: Keeps it pinned for exactly 300px of scroll distance, then freezes!
+                        scrub: 1,                  // Smooth tracking speed
+                        pin: true,                 // Holds the entire section layout locked in place during the separation
+                        pinSpacing: true           // Pushes downstream content down so nothing clips over your text
+                    });
 
                 }, 500); 
             });

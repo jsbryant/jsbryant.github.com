@@ -121,7 +121,7 @@
 <section id="scope" class="section project-detail">
                 <div class="container">
                     <h1>scope &amp; constraints //</h1><br>
-                    <div class="row">                
+                    <div class="row">               
                         <div class="column">
                             <div class="svg-image">
                                 <svg id="ellipse" xmlns="http://www.w3.org/2000/svg" width="188" height="188" fill="none"><circle cx="94" cy="94" r="90" stroke="#fff" stroke-width="8"/></svg>
@@ -185,7 +185,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="column">
-                            <img src="images/map-layers.png" alt="Graphic depicting the layers the map interface" width="100%" height="auto">
+                            <div class="layer-cake-container" id="layerCakeTrigger">
+                                <img src="images/layer5-top.png" alt="Top UI Layer" class="cake-layer-5">
+                                <img src="images/layer4-midhigh.png" alt="Secondary UI Elements Layer" class="cake-layer-4">
+                                <img src="images/layer3-mid.png" alt="Sticky Actions Layer" class="cake-layer-3">
+                                <img src="images/layer2-lowmid.png" alt="Map Vectors and Routes Layer" class="cake-layer-2">
+                                <img src="images/layer1-base.png" alt="Base Map Layer" class="cake-layer-1">
+                            </div>
                         </div>
                         <div class="column">
                             <h1>the outcome //</h1><br>
@@ -251,9 +257,9 @@
                         opacity: 1,
                         scale: 0.60,
                         y: 0,
-                        duration: 1.0,        // Shaved off a tiny bit of time since there's no overshoot
-                        ease: "power2.out",   // Classic, smooth deceleration curve
-                        stagger: 0.2,         // Keeps the clean left-to-right sequential reveal
+                        duration: 1.0,        
+                        ease: "power2.out",   
+                        stagger: 0.2,         
                         scrollTrigger: {
                             trigger: "#scope",
                             start: "top 75%",
@@ -265,17 +271,17 @@
                     // Case Study Images - Scroll Reveal Animation
                     // ==========================================================================
 
-                    // 1. Target all case study images, explicitly ignoring the first major detail image
-                    const detailImages = document.querySelectorAll('.project-detail img, .project-detail-image:not(.dh-image-01)');
+                    // Explicitly ignore any images inside the layer-cake container so they don't fight with ScrollTrigger
+                    const detailImages = document.querySelectorAll('.project-detail img:not(.layer-cake-container img), .project-detail-image:not(.dh-image-01)');
 
-                    // 2. Set their initial invisible, shifted state
+                    // Set their initial invisible, shifted state
                     gsap.set(detailImages, {
                         opacity: 0,
                         y: 40,
                         transformOrigin: "center center"
                     });
 
-                    // 3. Create the scroll-triggered reveal animation for each image
+                    // Create the scroll-triggered reveal animation for each image
                     detailImages.forEach((img) => {
                         gsap.to(img, {
                             opacity: 1,
@@ -283,12 +289,33 @@
                             duration: 1.2,
                             ease: "power2.out",
                             scrollTrigger: {
-                                trigger: img,           // Each individual image triggers its own animation
-                                start: "top 85%",       // Animation starts when the top of the image hits 85% from the top of the viewport
-                                toggleActions: "play none none none" // Plays once when scrolling down, doesn't reverse
+                                trigger: img,           
+                                start: "top 85%",       
+                                toggleActions: "play none none none" 
                             }
                         });
                     });
+
+                    // ==========================================================================
+                    // Layered Cake - ScrollDriven Explosion (Y-Axis)
+                    // ==========================================================================
+                    
+                    // Create a scrubbed timeline linked entirely to the viewport scroll
+                    const cakeTimeline = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: "#layerCakeTrigger",
+                            start: "top 85%",    // Starts expanding when the container enters the frame lower down
+                            end: "bottom 15%",   // Finishes expanding closer to the top output
+                            scrub: 1             
+                        }
+                    });
+
+                    // Pulling layers outwards along the Y axis
+                    cakeTimeline.to(".cake-layer-5", { y: "-160px", ease: "none" }, 0)
+                                .to(".cake-layer-4", { y: "-160px",  ease: "none" }, 0)
+                                .to(".cake-layer-3", { y: "20px",    ease: "none" }, 0) // Anchor layer
+                                .to(".cake-layer-2", { y: "100px",   ease: "none" }, 0)
+                                .to(".cake-layer-1", { y: "160px",  ease: "none" }, 0);
 
                 }, 500); 
             });

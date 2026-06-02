@@ -700,6 +700,31 @@ ol li::marker {
 .cake-layer-2 { z-index: 2; opacity: 0; }
 .cake-layer-1 { z-index: 1; opacity: 0; }
 
+.parallax-window {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Viewport frame height */
+    overflow: hidden; /* Clean viewport clipping */
+    background-color: #1a1a1a; /* Acts as a structural fallback container canvas */
+}
+
+.parallax-img {
+    position: absolute;
+    
+    /* FIX: Anchor the asset directly at the absolute top boundary */
+    top: 0; 
+    left: 50%;
+    
+    width: 100%;
+    height: 130%; /* Gives you plenty of vertical moving runway without clipping half the asset */
+    object-fit: cover;
+    
+    /* FIX: Keep this completely isolated to horizontal alignment to eliminate layout jumping */
+    transform: translateX(-50%); 
+    
+    will-change: transform;
+}
+
 footer {
     position: relative;
     bottom: 0;
@@ -756,6 +781,10 @@ footer {
 
     .layer-cake-container {
         height: 220px;
+    }
+
+    .parallax-window {
+        height: 300px; /* Scaled down window height for mobile */
     }
 }
 

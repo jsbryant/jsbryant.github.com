@@ -397,12 +397,13 @@ a:hover, a:active {
 h1, h2 {
     font-family: "Mozilla Text", sans-serif;
     font-optical-sizing: auto;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 200;
     color: #fff;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-bottom: 8px;
 }
 
 .summary {

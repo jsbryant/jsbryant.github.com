@@ -36,7 +36,9 @@
 			    <path d="M110.5 110.5V62C110.5 62 110.5 16 63.5 16C37.6774 16 16 36.1774 16 62C16 110.5 63.5 110.5 63.5 110.5H244C244 110.5 292.5 110.5 292.5 62C292.5 35.8954 270.105 16 244 16C198.5 16 198.5 62 198.5 62V242.5C198.5 242.5 198.5 292 244 292C271.063 292 292.5 269.563 292.5 242.5C292.5 195.5 244 195.5 244 195.5H63.5C63.5 195.5 16 195.5 16 242.5C16 269.292 36.7085 292 63.5 292C110.5 292 110.5 242.5 110.5 242.5V110.5Z" stroke="white" stroke-width="20" class="svg-elem-1"></path>
 			</svg>
 		</div>	
-
+<!-- Custom cursor -->
+        <div class="custom-cursor"></div>
+<!-- End custom cursor -->
         <nav>
             <div class="container">
                 <div id="logo-container">
@@ -236,6 +238,60 @@
                     });
                 }, 500); 
             });
+            // ==========================================================================
+            // High-Performance Custom Cursor Tracking (Zero Jump Fix)
+            // ==========================================================================
+            const cursor = document.querySelector(".custom-cursor");
+
+            // Optimized coordinate setters
+            const xTo = gsap.quickTo(cursor, "x", { duration: 0.2, ease: "power3.out" });
+            const yTo = gsap.quickTo(cursor, "y", { duration: 0.2, ease: "power3.out" });
+
+            let hasMoved = false;
+
+            window.addEventListener("mousemove", (e) => {
+                if (!hasMoved) {
+                    // 1. Force GSAP to instantly snap to the coordinates on frame one (bypassing the 0.2s lag)
+                    gsap.set(cursor, {
+                        x: e.clientX,
+                        y: e.clientY
+                    });
+                    
+                    // 2. Smoothly fade it in now that it is safely positioned directly underneath the hand
+                    cursor.style.opacity = "1";
+                    
+                    hasMoved = true;
+                } else {
+                    // 3. For every movement after frame one, use the premium smooth gliding lag
+                    xTo(e.clientX);
+                    yTo(e.clientY);
+                }
+            });
+
+            // Target all clickable elements
+            const interactiveElements = document.querySelectorAll("a, button, .project, #logo-container");
+
+            interactiveElements.forEach((el) => {
+                // Expand and invert the cursor circle on hover
+                el.addEventListener("mouseenter", () => {
+                    gsap.to(cursor, {
+                        "--size": "50px",
+                        backgroundColor: "transparent",
+                        border: "2px solid #fff",
+                        duration: 0.3
+                    });
+                });
+
+                // Shrink it back to normal when moving away
+                el.addEventListener("mouseleave", () => {
+                    gsap.to(cursor, {
+                        "--size": "20px",
+                        backgroundColor: "#fff",
+                        border: "none",
+                        duration: 0.3
+                    });
+                });
+            });             
         </script>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

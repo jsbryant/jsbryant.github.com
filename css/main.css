@@ -294,6 +294,7 @@ body {
     font-size: 0.9rem;
     color: var(--primary-gray);
     line-height: 1.6;
+    cursor: none;
 }
 
 /* Keeps the full-screen background dark and centered */
@@ -392,6 +393,33 @@ a:link, a:visited {
 
 a:hover, a:active {
     text-decoration: underline;
+}
+
+a, 
+button, 
+.project, 
+.clickable-section-wrapper, 
+.clickable-section-wrapper * {
+    cursor: none !important;
+}
+
+.custom-cursor {
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); 
+    pointer-events: none; 
+    z-index: 99999; 
+    will-change: width, height, background-color, border, opacity; 
+    
+    /* NEW: Start invisible so it doesn't flash in the top-left corner */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 h1, h2 {

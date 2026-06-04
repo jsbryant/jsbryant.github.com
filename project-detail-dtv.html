@@ -47,7 +47,7 @@
                 </div>
                 <div id="nav-links">
                     <a href="https://www.linkedin.com/in/jsbryant/" target="_blank">linkedin</a>
-                    <a href="mailto:jsbrymail@gmail.com">email</a>
+                    <a href="#" id="copy-email-btn">email<span class="copy-toast">Copied to clipboard</span></a>
                 </div>
             </div>
         </nav>
@@ -311,6 +311,39 @@
                         border: "none",
                         duration: 0.3
                     });
+                });
+            });
+            // ==========================================================================
+            // Copy Email to Clipboard & Toast Notification Action
+            // ==========================================================================
+
+            const emailBtn = document.getElementById("copy-email-btn");
+            const copyToast = document.querySelector(".copy-toast");
+            const emailAddress = "jsbrymail@gmail.com"; // Your exact email address
+
+            emailBtn.addEventListener("click", (e) => {
+                e.preventDefault(); // Prevents the link from jumping to the top of the page (#)
+
+                // 1. Use the modern Clipboard API to silently copy the string
+                navigator.clipboard.writeText(emailAddress).then(() => {
+                    
+                const tl = gsap.timeline();
+
+                tl.to(copyToast, {
+                    opacity: 1,
+                    y: 5,        // Slides 5px downward into position on click
+                    duration: 0.3,
+                    ease: "power2.out"
+                })
+                .to(copyToast, {
+                    opacity: 0,
+                    y: 15,       // Smoothly continues drifting downward as it exits
+                    duration: 0.4,
+                    ease: "power2.in",
+                    delay: 1.2 
+                });             
+                }).catch(err => {
+                    console.error("Fallback: Could not copy email address string", err);
                 });
             });             
         </script>

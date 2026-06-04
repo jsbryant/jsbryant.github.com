@@ -422,6 +422,31 @@ button,
     transition: opacity 0.3s ease;
 }
 
+/* Position the parent link relatively so the toast anchors perfectly above it */
+#copy-email-btn {
+    position: relative;
+}
+
+.copy-toast {
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 0;
+    transform: none;
+    background-color: #fff;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;    
+    opacity: 0;
+    pointer-events: none; 
+    will-change: transform, opacity;
+}
+
 h1, h2 {
     font-family: "Mozilla Text", sans-serif;
     font-optical-sizing: auto;

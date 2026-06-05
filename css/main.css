@@ -1,273 +1,9 @@
+/* ==========================================================================
+   1. DESIGN TOKENS & CORE RESET
+   ========================================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200;700&display=swap');
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 2px;
-    width: 90%;
-    border: 0;
-    border-top: 2px solid rgb(255 255 255 / 20%);
-    margin: 2rem auto;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-/* ==========================================================================
-   End Boilerplate CSS
-   ========================================================================== */
 :root {
     --primary-gray: #949494;
     --secondary-gray: #444444;
@@ -288,16 +24,45 @@ html {
 
 body {
     position: relative;
-    margin: 0 auto; 
     width: 100%;
+    margin: 0 auto; 
     background-color: #1a1a1a;
     font-size: 0.9rem;
     color: var(--primary-gray);
     line-height: 1.6;
-    cursor: none;
+    cursor: none; /* Controlled globally by custom GSAP pointer runtime */
 }
 
-/* Keeps the full-screen background dark and centered */
+/* Force modern custom cursor rules safely across all interactive containers */
+a, button, .project, .clickable-section-wrapper, .clickable-section-wrapper * {
+    cursor: none !important;
+}
+
+::selection, ::moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* Horizontal Rule Divider */
+hr {
+    display: block;
+    height: 2px;
+    width: 90%;
+    border: 0;
+    border-top: 2px solid rgb(255 255 255 / 20%);
+    margin: 2rem auto;
+}
+
+/* Media Whitespace Cleansing */
+img, svg, video {
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   2. SYSTEM COMPONENTS & MICRO-INTERACTIONS
+   ========================================================================== */
+
+/* --- Loading Screen Screen Overlay --- */
 #loading-screen {
     position: fixed;
     top: 0;
@@ -318,24 +83,64 @@ body {
     visibility: hidden;
 }
 
-/* --- Custom SVG Infinite Animation Loop --- */
+/* Custom SVG Infinite Loader Loop */
 svg.active .svg-elem-1 {
     stroke-dasharray: 1627.04px;
-    /* Uses the exact cubic-bezier timing from SVG Artista, but loops infinitely */
     animation: drawAndErase 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
 
 @keyframes drawAndErase {
-    0% {
-        stroke-dashoffset: 1627.04px; /* Completely invisible */
-    }
-    50% {
-        stroke-dashoffset: 0px; /* Fully drawn out */
-    }
-    100% {
-        stroke-dashoffset: -1627.04px; /* Fully erased onward, loops cleanly back to 0% */
-    }
+    0%   { stroke-dashoffset: 1627.04px; }
+    50%  { stroke-dashoffset: 0px; }
+    100% { stroke-dashoffset: -1627.04px; }
 }
+
+/* --- High Performance Custom Cursor Target --- */
+.custom-cursor {
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); 
+    pointer-events: none; 
+    z-index: 99999; 
+    will-change: width, height, background-color, border, opacity; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* --- Action Toast Notifications --- */
+#copy-email-btn {
+    position: relative;
+}
+
+.copy-toast {
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 0;
+    transform: none;
+    background-color: #fff;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;    
+    opacity: 0;
+    pointer-events: none; 
+    will-change: transform, opacity;
+}
+
+/* ==========================================================================
+   3. GLOBAL NAVIGATION MODULES
+   ========================================================================== */
 
 nav {
     position: sticky;
@@ -371,7 +176,6 @@ nav .container {
     font-optical-sizing: auto;
     font-size: 1rem;
     font-weight: 300;
-    font-style: normal;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -395,75 +199,9 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-a, 
-button, 
-.project, 
-.clickable-section-wrapper, 
-.clickable-section-wrapper * {
-    cursor: none !important;
-}
-
-.custom-cursor {
-    --size: 20px;
-    width: var(--size);
-    height: var(--size);
-    background-color: #fff;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%); 
-    pointer-events: none; 
-    z-index: 99999; 
-    will-change: width, height, background-color, border, opacity; 
-    
-    /* NEW: Start invisible so it doesn't flash in the top-left corner */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-/* Position the parent link relatively so the toast anchors perfectly above it */
-#copy-email-btn {
-    position: relative;
-}
-
-.copy-toast {
-    position: absolute;
-    top: calc(100% + 10px); 
-    right: 0;
-    transform: none;
-    background-color: #fff;
-    color: #1a1a1a;
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    font-weight: normal;
-    letter-spacing: 0;
-    text-transform: none;
-    padding: 6px 12px;
-    border-radius: 4px;
-    white-space: nowrap;    
-    opacity: 0;
-    pointer-events: none; 
-    will-change: transform, opacity;
-}
-
-h1, h2 {
-    font-family: "Mozilla Text", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 0.85rem;
-    font-weight: 200;
-    color: #fff;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-}
-
-.summary {
-    font-size: 1.1rem;
-    padding-left: 20px;
-    border-left: 4px solid var(--secondary-gray);
-}
+/* ==========================================================================
+   4. LAYOUT ARCHITECTURE & TYPOGRAPHY
+   ========================================================================== */
 
 main {
     position: relative;
@@ -480,12 +218,75 @@ main {
     max-width: 960px;
 }
 
+h1, h2 {
+    font-family: "Mozilla Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 0.85rem;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+span { color: #fff; }
+li { line-height: 2; }
+
+/* Custom Decimal List Overrides */
+ol {
+    padding-left: 40px;
+    list-style-type: decimal-leading-zero;
+    counter-reset: item; 
+}
+
+ol li {
+    counter-increment: item; 
+}
+
+ol li::marker {
+    content: counter(item, decimal-leading-zero) " - "; 
+}
+
+/* Responsive Grid Rows */
+.row {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.row .column {
+    flex: 1;
+}
+
+.hidden-title {
+    visibility: hidden;
+    margin: 0;
+}
+
+/* ==========================================================================
+   5. CASE STUDY SPECIFIC INTERFACES
+   ========================================================================== */
+
 .company-details .container {
     border-bottom: 1px solid var(--secondary-gray);
     padding-bottom: 40px;
 }
 
-.project {
+.summary {
+    font-size: 1.1rem;
+    padding-left: 20px;
+    border-left: 4px solid var(--secondary-gray);
+}
+
+.home {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+/* Base Heros & Project Index Cards */
+.hero, .project {
     position: relative;
     height: 200px;
     background-size: cover;
@@ -502,6 +303,7 @@ main {
     justify-content: flex-end;
 }
 
+/* Animated Card Titles on Hover */
 .project h1 {
     position: absolute;
     bottom: 20px;
@@ -512,8 +314,8 @@ main {
 }
 
 .project:hover h1 {
-    transform: translateY(0); /* Pulls it up back to its original position */
-    opacity: 1; /* Fades it in completely */
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .project::before {
@@ -533,54 +335,12 @@ main {
     opacity: 1;
 }
 
-.project-dh {
-    background-image: url('../images/dh-bg.png');
-}
-
-.project-hpe {
-    background-image: url('../images/hpe-bg.png');
-}
-
-.project-vrz {
-    background-image: url('../images/vrz-bg.png');
-}
-
-.project-dtv {
-    background-image: url('../images/dtv-bg.png');
-}
-
-.project-psn {
-    background-image: url('../images/psn-bg.png');
-}
-
-.hero {
-    position: relative;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.dh-hero {
-    background-image: url('../images/dh-bg.png');
-}
-
-.hpe-hero {
-    background-image: url('../images/hpe-bg.png');
-}
-
-.vrz-hero {
-    background-image: url('../images/vrz-bg.png');
-}
-
-.dtv-hero {
-    background-image: url('../images/dtv-bg.png');
-}
-
-.psn-hero {
-    background-image: url('../images/psn-bg.png');
-}
+/* Local Image Engine Directives */
+.project-dh, .dh-hero   { background-image: url('../images/dh-bg.png'); }
+.project-hpe, .hpe-hero { background-image: url('../images/hpe-bg.png'); }
+.project-vrz, .vrz-hero { background-image: url('../images/vrz-bg.png'); }
+.project-dtv, .dtv-hero { background-image: url('../images/dtv-bg.png'); }
+.project-psn, .psn-hero { background-image: url('../images/psn-bg.png'); }
 
 .project-detail .container {
     display: flex;
@@ -598,24 +358,11 @@ main {
     background-repeat: no-repeat;
 }
 
-#proposal .row {
-    align-items: flex-start;
-}
+#proposal .row { align-items: flex-start; }
+#proposal img   { max-width: 50%; height: auto; display: block; margin: auto; }
 
-#proposal img {
-    max-width: 50%; /* Adjust this percentage to get the exact design scale you want */
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.dh-image-01 {
-    background-image: url('https://imagedelivery.net/QopPmq6sPZVeeWT6S9SiOQ/2a18549f-c5f5-4246-4ef5-b79a902cfb00/w=1400,h=933');
-}
-
-.hpe-image-01 {
-    background-image: url('https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/generic-named/c-e/CIC-London-Experience-zone-9-16-9.jpg');
-}
+.dh-image-01  { background-image: url('https://imagedelivery.net/QopPmq6sPZVeeWT6S9SiOQ/2a18549f-c5f5-4246-4ef5-b79a902cfb00/w=1400,h=933'); }
+.hpe-image-01 { background-image: url('https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/generic-named/c-e/CIC-London-Experience-zone-9-16-9.jpg'); }
 
 .clickable-section-wrapper {
     text-decoration: none;
@@ -623,78 +370,17 @@ main {
     display: block;
 }
 
-.clickable-section-wrapper:hover .project-dh {
-    cursor: pointer;
-}
+/* Portfolio Video Elements */
+.video-wrapper { width: 100%; margin: 0 auto; }
+.video-wrapper video { width: 100%; height: auto; display: block; }
 
-.video-wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
+#image-01 .row { width: 100%; }
+#image-01 img  { width: 100%; display: block; }
 
-.video-wrapper video {
-  width: 100%;
-  height: auto;
-  display: block;   /* Removes any default inline bottom whitespace gaps */
-}
-
-figure {
-    width: 100%;
-}
-
-figcaption {
-    font-size: 0.8rem;
-    font-style: italic;
-    padding-top: 8px;
-    letter-spacing: 0.05rem;
-}
-
-.home {
-    display: block;
-    width: 100%;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #444;
-}
-
-span {
-    color: #fff;
-}
-
-li {
-    line-height: 2;
-}
-
-ol {
-    padding-left: 40px;
-    list-style-type: decimal-leading-zero;
-    counter-reset: item; /* Starts the counter */
-}
-
-ol li {
-    counter-increment: item; /* Tells each item to add 1 */
-}
-
-ol li::marker {
-    content: counter(item, decimal-leading-zero) " - "; /* Displays the correct calculated number */
-}
-
-.row {
-    display: flex;
-    width: 100%;
-    gap: 40px;
-}
-
-.row .column {
-    flex: 1;
-}
-
-.stat {
-    text-align: center;
-}
-
-.stat h1 {
-    font-size: 3rem;
-}
+figure    { width: 100%; }
+figcaption { font-size: 0.8rem; font-style: italic; padding-top: 8px; letter-spacing: 0.05rem; }
+.stat      { text-align: center; }
+.stat h1   { font-size: 3rem; }
 
 .svg-image {
     display: flex;
@@ -705,28 +391,11 @@ ol li::marker {
     margin-bottom: 20px;
 }
 
-.hidden-title {
-    visibility: hidden;
-    margin: 0;
-}
+.vroozi-image-1 { height: 300px; object-fit: cover; object-position: 0 0; }
 
-#bottom-links .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-}
+/* --- Advanced Design Engineering Layout Components --- */
 
-#bottom-links a {
-    padding: 0 16px;
-}
-
-.vroozi-image-1 {
-    height: 300px;
-    object-fit: cover;
-    object-position: 0 0;
-}
-
+/* Layer Cake Architecture Component */
 .layer-cake-container {
     position: relative;
     width: 100%;
@@ -747,37 +416,34 @@ ol li::marker {
     transform: translate(-50%, -50%);
     will-change: transform;
 }
-
-.cake-layer-5 { z-index: 5; opacity: 1; } /* Top layer stays visible */
+.cake-layer-5 { z-index: 5; opacity: 1; }
 .cake-layer-4 { z-index: 4; opacity: 0; }
 .cake-layer-3 { z-index: 3; opacity: 0; }
 .cake-layer-2 { z-index: 2; opacity: 0; }
 .cake-layer-1 { z-index: 1; opacity: 0; }
 
+/* Parallax Canvas Component */
 .parallax-window {
     position: relative;
     width: 100%;
-    height: 400px; /* Viewport frame height */
-    overflow: hidden; /* Clean viewport clipping */
-    background-color: #1a1a1a; /* Acts as a structural fallback container canvas */
+    height: 400px; 
+    overflow: hidden; 
+    background-color: #1a1a1a; 
 }
-
 .parallax-img {
     position: absolute;
-    
-    /* FIX: Anchor the asset directly at the absolute top boundary */
     top: 0; 
     left: 50%;
-    
     width: 100%;
-    height: 130%; /* Gives you plenty of vertical moving runway without clipping half the asset */
+    height: 130%; 
     object-fit: cover;
-    
-    /* FIX: Keep this completely isolated to horizontal alignment to eliminate layout jumping */
     transform: translateX(-50%); 
-    
     will-change: transform;
 }
+
+/* Layout Footers and Navigation Links */
+#bottom-links .container { display: flex; justify-content: center; align-items: center; height: 80px; }
+#bottom-links a          { padding: 0 16px; }
 
 footer {
     position: relative;
@@ -791,54 +457,25 @@ footer {
 }
 
 /* ==========================================================================
-   Image Grid Layout Fixes
-   ========================================================================== */
-
-/* 1. Force the row elements to stretch across the full container width */
-#image-01 .row {
-  width: 100%;
-}
-
-/* 2. Force the images within this section to be completely fluid */
-#image-01 img {
-  width: 100%;
-  /*height: auto;*/
-  display: block; /* Eliminates the default native whitespace gap under images */
-}
-
-/* ==========================================================================
-   Media Queries
+   6. RESPONSIVE LAYOUT OVERRIDES & ACCESSIBILITY
    ========================================================================== */
 
 @media (max-width: 768px) {
-    .cols-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .row {
+    .cols-container, .row, #image-01 .row {
         flex-direction: column;
         gap: 40px;
     }
-
-    #image-01 .row {
-        gap: 40px; /* Puts consistent spacing between stacked images on mobile screens */
-    }
-
     ul {
-    padding-left: 20px;
+        padding-left: 20px;
     }
-
     #scope .column, #proposal .column, #outcome .column {
         margin-bottom: 40px;
     }
-
     .layer-cake-container {
         height: 220px;
     }
-
     .parallax-window {
-        height: 300px; /* Scaled down window height for mobile */
+        height: 300px; 
     }
 }
 
@@ -854,6 +491,7 @@ footer {
     }
 }
 
+/* Reduced Motion Safety Override Block */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-delay: 0s !important;
@@ -863,4 +501,9 @@ footer {
         scroll-behavior: auto !important;
         transition-duration: 0s !important;
     }
+}
+
+.about, 
+.clickable-section-wrapper {
+    opacity: 0;
 }

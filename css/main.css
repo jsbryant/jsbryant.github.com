@@ -97,20 +97,28 @@ svg.active .svg-elem-1 {
 
 /* --- High Performance Custom Cursor Target --- */
 .custom-cursor {
-    --size: 20px;
-    width: var(--size);
-    height: var(--size);
-    background-color: #fff;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%); 
-    pointer-events: none; 
-    z-index: 99999; 
-    will-change: width, height, background-color, border, opacity; 
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    display: none;
+    pointer-events: none;
+}
+
+@media (pointer: fine) {
+    .custom-cursor {
+        display: block;
+        --size: 20px;
+        width: var(--size);
+        height: var(--size);
+        background-color: #fff;
+        border-radius: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%); 
+        pointer-events: none; 
+        z-index: 99999; 
+        will-change: width, height, background-color, border, opacity; 
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
 
 /* --- Action Toast Notifications --- */

@@ -297,7 +297,7 @@ ul {
 .row {
     display: flex;
     width: 100%;
-    gap: 20px;
+    gap: 40px;
 }
 
 .row .column {

@@ -297,11 +297,21 @@ ul {
 .row {
     display: flex;
     width: 100%;
-    gap: 40px;
+    gap: 20px;
 }
 
 .row .column {
     flex: 1;
+}
+
+.company-details .row {
+    gap: 8px;
+}
+
+.company-details .row .column {
+    padding: 20px;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #111111, transparent);
 }
 
 .hidden-title {
@@ -504,7 +514,10 @@ footer {
 @media (max-width: 768px) {
     .cols-container, .row, #image-01 .row {
         flex-direction: column;
-        gap: 40px;
+        gap: 8px;
+    }
+    .company-details .row {
+        gap: 8px;
     }
     ul {
         padding-left: 20px;

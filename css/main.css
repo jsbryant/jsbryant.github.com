@@ -156,7 +156,6 @@ nav {
     width: 100%;
     padding: 16px 16px;
     background: #1a1a1a;
-    border-bottom: 1px solid var(--secondary-gray);
     z-index: 9999 !important;
 }
 
@@ -210,6 +209,12 @@ a:hover, a:active {
     text-decoration-color: #ffffff;
 }
 
+mark {
+    background-color: #dacfcf;
+    color: #111;
+    padding: 0 4px;
+}
+
 /* ==========================================================================
    4. LAYOUT ARCHITECTURE & TYPOGRAPHY
    ========================================================================== */
@@ -223,6 +228,21 @@ main {
     padding: 40px 16px;
     margin-bottom: 4px;
 }
+
+/* ===== About section ===== */
+
+.about  {
+    display: flex;
+    align-items: center;
+    height: 85svh;
+}
+
+.about p {
+    font-size: 2rem;
+    color: #dacfcf;
+}
+
+/* ===== End About section ===== */
 
 .section .container, .project .container {
     margin: 0 auto;
@@ -515,6 +535,10 @@ footer {
 @media (max-width: 483px) {
     .project-detail-image {
         background-position: 60% 30%;
+    }
+
+    .about p {
+        font-size: 1.45rem;
     }
 }
 

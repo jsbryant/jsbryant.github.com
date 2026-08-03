@@ -313,23 +313,11 @@ ul {
    5. CASE STUDY SPECIFIC INTERFACES
    ========================================================================== */
 
-/*.company-details .container {
-    border-bottom: 1px solid var(--secondary-gray);
-    padding-bottom: 40px;
-}*/
-
 .summary {
-    font-size: 1.1rem;
+    font-size: 1.45rem;
     padding-left: 20px;
     border-left: 4px solid var(--secondary-gray);
 }
-
-/*.home {
-    display: block;
-    width: 100%;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--secondary-gray);
-}*/
 
 /* Base Heros & Project Index Cards */
 .hero, .project {
@@ -539,6 +527,10 @@ footer {
 
     .about p {
         font-size: 1.45rem;
+    }
+
+    .summary {
+        font-size: 1.25rem;
     }
 }
 

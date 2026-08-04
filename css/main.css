@@ -33,6 +33,16 @@ body {
     cursor: none; /* Controlled globally by custom GSAP pointer runtime */
 }
 
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Keeps aspect ratio while filling screen */
+    z-index: -1;      /* Places video behind other elements */
+}
+
 /* Force modern custom cursor rules safely across all interactive containers */
 a, button, .project, .clickable-section-wrapper, .clickable-section-wrapper * {
     cursor: none !important;
@@ -350,7 +360,7 @@ ul {
 /* Animated Card Titles on Hover */
 .project h1 {
     position: absolute;
-    bottom: 20px;
+    bottom: -20px;
     left: 20px;
     transform: translateY(15px); 
     opacity: 0;

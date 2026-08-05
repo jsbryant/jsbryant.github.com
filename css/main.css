@@ -219,10 +219,39 @@ a:hover, a:active {
     text-decoration-color: #ffffff;
 }
 
-mark {
-    background-color: #dacfcf;
-    color: #111;
-    padding: 0 4px;
+/* ==========================================================================
+   TEXT HIGHLIGHT ANIMATION
+   ========================================================================== */
+
+mark.animated-mark {
+  /* Reset default mark styles */
+  background-color: transparent;
+  padding: 0 4px;
+  
+  /* Create two background layers:
+     1. Text Color Layer (clipped to text)
+     2. Highlight Background Layer */
+  background-image: 
+    linear-gradient(to right, #000000 50%, #dacfcf 50%), /* Text color transition: Black to White */
+    linear-gradient(to right, #dacfcf 50%, transparent 50%); /* Background transition: Blue to Transparent */
+  
+  /* Apply the top gradient layer strictly as a text mask */
+  background-clip: text, border-box;
+  -webkit-background-clip: text, border-box;
+  -webkit-text-fill-color: transparent;
+  
+  /* Initial state: 200% width offset to show starting colors */
+  background-size: 200% 100%, 200% 100%;
+  background-position: 100% 0, 100% 0;
+  
+  animation: highlight-reveal 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 1.5s;
+}
+
+@keyframes highlight-reveal {
+  to {
+    /* Move both gradients to reveal the highlighted state */
+    background-position: 0 0, 0 0;
+  }
 }
 
 /* ==========================================================================

@@ -3,22 +3,28 @@
 // ==========================================================================
 gsap.registerPlugin(ScrollTrigger);
 
-// --- High-Performance Parallax Calculations ---
-const parallaxWindow = document.querySelector(".parallax-window");
-const parallaxImg = document.querySelector(".parallax-img");
+document.addEventListener("DOMContentLoaded", () => {
+  // Query all parallax windows on the page
+  const parallaxWindows = document.querySelectorAll(".parallax-window");
 
-if (parallaxWindow && parallaxImg) {
-    gsap.to(parallaxImg, {
-        y: "-20%", 
+  parallaxWindows.forEach((windowEl) => {
+    // Find the image inside this specific window
+    const img = windowEl.querySelector("img, .parallax-img");
+
+    if (img) {
+      gsap.to(img, {
+        y: "-20%", // Movement distance
         ease: "none",
         scrollTrigger: {
-            trigger: parallaxWindow,
-            start: "top bottom", 
-            end: "bottom top",   
-            scrub: true
+          trigger: windowEl,     // Trigger specifically on THIS container
+          start: "top bottom",   // Starts when container enters bottom of screen
+          end: "bottom top",     // Ends when container exits top of screen
+          scrub: true            // Syncs smooth motion directly to scroll
         }
-    });
-}
+      });
+    }
+  });
+});
 
 // ==========================================================================
 // CORE PAGE ORCHESTRATION ENGINE & STRUCTURAL ANIMATIONS (Runs at Window Load)

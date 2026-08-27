@@ -26,11 +26,13 @@ body {
     position: relative;
     width: 100%;
     margin: 0 auto; 
-    background-color: #1a1a1a;X
+    background-color: #1a1a1a;
+    /*background: url('../images/body-bg.png') center center / cover no-repeat fixed;
+    min-height: 100vh;*/
     font-size: 1rem;
     color: var(--primary-gray);
     line-height: 1.6;
-    cursor: none; /* Controlled globally by custom GSAP pointer runtime */
+    cursor: none;
 }
 
 .bg-video {

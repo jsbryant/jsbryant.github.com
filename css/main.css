@@ -447,7 +447,9 @@ ul {
 }
 
 #dtv-role .container > :nth-child(2),
-#psn-role .container > :nth-child(2)
+#psn-role .container > :nth-child(2),
+#vrz-role .container > :nth-child(2),
+#vrz-metrics .container > :nth-child(2)
 {
     margin-top: -40px;
 }

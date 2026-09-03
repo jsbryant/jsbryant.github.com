@@ -290,6 +290,7 @@ main {
     max-width: 960px;
 }
 
+
 h1, h2 {
     font-family: "Mozilla Text", sans-serif;
     font-optical-sizing: auto;
@@ -298,11 +299,23 @@ h1, h2 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 8px;
+    padding-bottom: 0.25rem;
+}
+
+h1 {
+    width: 100%;
+    border-bottom: 1.5px solid #626262;
+    margin-bottom: 1rem;
 }
 
 h1::before {
     content: '/ ';
+}
+
+.project-title {
+    width: auto;
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 span { color: #fff; }
@@ -351,13 +364,8 @@ ul {
 
 .company-details .row .column {
     padding: 20px;
-    border-radius: 4px;
-    background: linear-gradient(45deg, #111111, transparent);
-}
-
-.hidden-title {
-    visibility: hidden;
-    margin: 0;
+    /*border-radius: 4px;
+    background: linear-gradient(45deg, #111111, transparent);*/
 }
 
 /* ==========================================================================
@@ -366,8 +374,8 @@ ul {
 
 .summary {
     font-size: 1.45rem;
-    padding-left: 20px;
-    border-left: 4px solid var(--secondary-gray);
+/*    padding-left: 20px;
+    border-left: 4px solid var(--secondary-gray);*/
 }
 
 /* Base Heros & Project Index Cards */
@@ -432,6 +440,16 @@ ul {
     display: flex;
     flex-wrap: wrap;
     row-gap: 40px;
+}
+
+#role .container {
+    row-gap: 0;
+}
+
+#dtv-role .container > :nth-child(2),
+#psn-role .container > :nth-child(2)
+{
+    margin-top: -40px;
 }
 
 .project-detail-image {

@@ -359,14 +359,14 @@ ul {
 }
 
 .company-details .row {
-    gap: 8px;
+    gap: 40px;
 }
 
-.company-details .row .column {
+/*.company-details .row .column {
     padding: 20px;
-    /*border-radius: 4px;
-    background: linear-gradient(45deg, #111111, transparent);*/
-}
+    border-radius: 4px;
+    background: linear-gradient(45deg, #111111, transparent);
+}*/
 
 /* ==========================================================================
    5. CASE STUDY SPECIFIC INTERFACES
@@ -578,7 +578,7 @@ footer {
         /*gap: 8px;*/
     }
     .company-details .row {
-        gap: 8px;
+        gap: 28px;
     }
     ul {
         padding-left: 20px;

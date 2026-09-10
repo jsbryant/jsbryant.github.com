@@ -443,9 +443,10 @@ ul {
 }
 
 #role .container {
-    row-gap: 0;
+    row-gap: 40px;
 }
 
+#twp-role .container > :nth-child(2),
 #dtv-role .container > :nth-child(2),
 #psn-role .container > :nth-child(2),
 #vrz-role .container > :nth-child(2),

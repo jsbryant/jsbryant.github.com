@@ -235,7 +235,7 @@ mark.animated-mark {
      2. Highlight Background Layer */
   background-image: 
     linear-gradient(to right, #000000 50%, #dacfcf 50%), /* Text color transition: Black to White */
-    linear-gradient(to right, #dacfcf 50%, transparent 50%); /* Background transition: Blue to Transparent */
+    linear-gradient(to right, #e9f89e 50%, transparent 50%); /* Background transition: Blue to Transparent */
   
   /* Apply the top gradient layer strictly as a text mask */
   background-clip: text, border-box;
